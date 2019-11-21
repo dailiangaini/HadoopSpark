@@ -6,7 +6,14 @@
 
     <groupId>dailiang</groupId>
     <artifactId>Hadoop.Spark</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>Project01_01_Hadoop</module>
+        <module>Project02_02_Spark</module>
+        <module>Project02_01_Scala</module>
+        <module>Project01_02_Hdfs</module>
+    </modules>
 
 
 </project>

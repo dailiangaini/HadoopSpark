@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HadoopSpark" />
+        <module name="Project02_01_Scala" />
+        <module name="Project01_02_Hdfs" />
+        <module name="Project01_01_Hadoop" />
+        <module name="Project02_02_Spark" />
       </profile>
     </annotationProcessing>
   </component>
