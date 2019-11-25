@@ -1,4 +1,4 @@
-package packge4.secondsort;
+package package04.secondsort;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 import org.slf4j.Logger;

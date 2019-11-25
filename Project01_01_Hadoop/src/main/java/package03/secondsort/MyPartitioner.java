@@ -11,6 +11,6 @@ import org.apache.hadoop.mapreduce.Partitioner;
 public class MyPartitioner extends Partitioner<IntPair, Text> {
     @Override
     public int getPartition(IntPair intPair, Text text, int num) {
-        return intPair.getFirst() % num;
+        return intPair.getFirst().get() % num;
     }
 }

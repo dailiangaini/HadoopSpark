@@ -1,22 +1,21 @@
-package packge4.secondsort;
+package package05.secondsort;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 /**
  * @Author: D&L
  * @Description:
  * @Date: 2019/11/24 22:01
  */
 public class DefinedComparator extends WritableComparator {
-    private static final Logger logger = LoggerFactory.getLogger(DefinedComparator.class);
     public DefinedComparator() {
         super(CombinationKey.class,true);
     }
     @Override
     public int compare(WritableComparable combinationKeyOne,
                        WritableComparable CombinationKeyOther) {
-        logger.info("---------enter DefinedComparator flag---------");
 
         CombinationKey c1 = (CombinationKey) combinationKeyOne;
         CombinationKey c2 = (CombinationKey) CombinationKeyOther;
@@ -27,12 +26,10 @@ public class DefinedComparator extends WritableComparator {
          * 下面这种比较对第一个字段的排序是升序的，如果想降序这将c1和c2倒过来（假设1）
          */
         if(!c1.getFirstKey().equals(c2.getFirstKey())){
-            logger.info("---------out DefinedComparator flag---------");
             return c1.getFirstKey().compareTo(c2.getFirstKey());
         }
         else{//按照组合键的第二个键的升序排序，将c1和c2倒过来则是按照数字的降序排序(假设2)
-            logger.info("---------out DefinedComparator flag---------");
-            return c1.getSecondKey().get()-c2.getSecondKey().get();//0,负数,正数
+            return Integer.compare(c1.getSecondKey(), c2.getSecondKey());//0,负数,正数
         }
         /**
          * （1）按照上面的这种实现最终的二次排序结果为：

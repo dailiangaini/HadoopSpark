@@ -1,4 +1,5 @@
 package package02.tq.comparator;
+import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 import package02.tq.entity.TQ;
 
@@ -13,14 +14,14 @@ public class TqGroupingComparator extends WritableComparator{
     }
 
     @Override
-    public int compare(Object a, Object b) {
-
+    public int compare(WritableComparable a, WritableComparable b) {
         TQ t1 = (TQ)a;
         TQ t2 = (TQ)b;
         int result = Integer.compare(t1.getYear(), t2.getYear());
         if(0 == result){
             result = Integer.compare(t1.getMonth(), t2.getMonth());
         }
-        return 0;
+        return result;
     }
+
 }

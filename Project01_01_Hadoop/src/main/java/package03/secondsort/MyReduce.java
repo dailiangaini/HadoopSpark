@@ -20,7 +20,7 @@ public class MyReduce extends Reducer<IntPair, Text, Text, Text> {
             stringBuffer.append(value).append("-");
         }
         String result = stringBuffer.substring(0, stringBuffer.length() - 1);
-        rkey.set(key.toString());
+        rkey.set(key.getFirst().get()+"");
         rval.set(result);
         context.write(rkey, rval);
     }

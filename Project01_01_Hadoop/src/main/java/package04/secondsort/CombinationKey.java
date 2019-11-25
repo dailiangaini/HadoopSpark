@@ -1,10 +1,9 @@
-package packge4.secondsort;
+package package04.secondsort;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
-import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.Text;
+
 import org.apache.hadoop.io.WritableComparable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,34 +16,35 @@ import org.slf4j.LoggerFactory;
 public class CombinationKey implements WritableComparable<CombinationKey> {
 
     private static final Logger logger = LoggerFactory.getLogger(CombinationKey.class);
-    private Text firstKey;
-    private IntWritable secondKey;
-    public CombinationKey() {
-        this.firstKey = new Text();
-        this.secondKey = new IntWritable();
+    private String firstKey;
+    private int secondKey;
+
+    public String getFirstKey() {
+        return firstKey;
     }
-    public Text getFirstKey() {
-        return this.firstKey;
-    }
-    public void setFirstKey(Text firstKey) {
+
+    public void setFirstKey(String firstKey) {
         this.firstKey = firstKey;
     }
-    public IntWritable getSecondKey() {
-        return this.secondKey;
+
+    public int getSecondKey() {
+        return secondKey;
     }
-    public void setSecondKey(IntWritable secondKey) {
+
+    public void setSecondKey(int secondKey) {
         this.secondKey = secondKey;
     }
+
     @Override
     public void readFields(DataInput dateInput) throws IOException {
         // TODO Auto-generated method stub
-        this.firstKey.readFields(dateInput);
-        this.secondKey.readFields(dateInput);
+        this.firstKey = dateInput.readUTF();
+        this.secondKey = dateInput.readInt();
     }
     @Override
     public void write(DataOutput outPut) throws IOException {
-        this.firstKey.write(outPut);
-        this.secondKey.write(outPut);
+        outPut.writeUTF(this.firstKey);
+        outPut.writeInt(this.secondKey);
     }
     /**
      * 自定义比较策略
@@ -54,6 +54,10 @@ public class CombinationKey implements WritableComparable<CombinationKey> {
     @Override
     public int compareTo(CombinationKey combinationKey) {
         logger.info("-------CombinationKey flag-------");
-        return this.firstKey.compareTo(combinationKey.getFirstKey());
+        int result = this.firstKey.compareTo(combinationKey.getFirstKey());
+        if(0 == result){
+            result = -Integer.compare(this.getSecondKey(), combinationKey.getSecondKey());
+        }
+        return result;
     }
 }

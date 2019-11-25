@@ -30,7 +30,7 @@ public class MyMapper extends Mapper<LongWritable, Text, IntPair, Text> {
             if (tokenizer.hasMoreTokens()){
                 right = Integer.parseInt(tokenizer.nextToken());
             }
-            intkey.set(left, right);
+            intkey.set(new IntWritable(left), new IntWritable(right));
             textValue.set(right + "");
             context.write(intkey, textValue);
         }

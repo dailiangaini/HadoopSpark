@@ -1,5 +1,6 @@
 package package03.secondsort;
 
+import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 
 /**
@@ -13,12 +14,12 @@ public class MySortComparator extends WritableComparator {
     }
 
     @Override
-    public int compare(Object a, Object b) {
+    public int compare(WritableComparable a, WritableComparable b) {
         IntPair ip1 = (IntPair) a;
         IntPair ip2 = (IntPair) b;
-        int result = Integer.compare(ip1.getFirst(), ip2.getFirst());
+        int result = ip1.getFirst().compareTo(ip2.getFirst());
         if(0 == result){
-            result = -Integer.compare(ip1.getSecond(), ip2.getSecond());
+            result = ip2.getSecond().compareTo(ip1.getSecond());
         }
         return result;
     }

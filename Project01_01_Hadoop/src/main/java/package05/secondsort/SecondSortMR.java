@@ -1,23 +1,26 @@
-package packge4.secondsort;
-import java.io.IOException;
-import java.util.Iterator;
+package package05.secondsort;
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+import java.util.Iterator;
+
 /**
  * @author zengzhaozheng
  *
@@ -38,7 +41,6 @@ import org.slf4j.LoggerFactory;
  * sort6 20,22,221
  */
 public class SecondSortMR extends Configured  implements Tool {
-    private static final Logger logger = LoggerFactory.getLogger(SecondSortMR.class);
     public static class SortMapper extends Mapper<Text, Text, CombinationKey, IntWritable> {
         //---------------------------------------------------------
         /**
@@ -58,19 +60,16 @@ public class SecondSortMR extends Configured  implements Tool {
         @Override
         protected void map(Text key, Text value, Context context)
                 throws IOException, InterruptedException {
-            logger.info("---------enter map function flag---------");
             //过滤非法记录
             if(key == null || value == null || key.toString().equals("")
                     || value.equals("")){
                 return;
             }
-            sortName.set(key.toString());
             score.set(Integer.parseInt(value.toString()));
-            combinationKey.setFirstKey(sortName);
-            combinationKey.setSecondKey(score);
+            combinationKey.setFirstKey(key.toString());
+            combinationKey.setSecondKey(Integer.parseInt(value.toString()));
             //map输出
             context.write(combinationKey, score);
-            logger.info("---------out map function flag---------");
         }
     }
 
@@ -101,23 +100,26 @@ public class SecondSortMR extends Configured  implements Tool {
                 sb.deleteCharAt(sb.length()-1);
             }
             sore.set(sb.toString());
-            context.write(key.getFirstKey(),sore);
-            logger.info("---------enter reduce function flag---------");
-            logger.info("reduce Input data:{["+key.getFirstKey()+","+
-                    key.getSecondKey()+"],["+sore+"]}");
-            logger.info("---------out reduce function flag---------");
+            context.write(new Text(key.getFirstKey()),sore);
         }
+    }
+
+    Configuration configuration = null;
+    @Override
+    public void setConf(Configuration conf) {
+        System.setProperty("hadoop.home.dir", "/Users/dailiang/Documents/Software/hadoop-2.10.0");
+        configuration = new Configuration();
+        configuration.set("mapreduce.framework.name", "local");
+        configuration.set("fs.defaultFS","hdfs://localhost:9000");
+        super.setConf(configuration);
     }
 
     @Override
     public int run(String[] args) throws Exception {
-        System.setProperty("hadoop.home.dir", "/Users/dailiang/Documents/Software/hadoop-2.10.0");
         String inputFile = "/Users/dailiang/Documents/second22";
         String outputDir = "/Users/dailiang/Documents/secondOut22";
 
         Configuration conf=getConf(); //获得配置文件对象
-        conf.set("mapreduce.framework.name", "local");
-        conf.set("fs.defaultFS","hdfs://localhost:9000");
         FileSystem fs = FileSystem.get(conf);
 
 
@@ -156,7 +158,6 @@ public class SecondSortMR extends Configured  implements Tool {
     }
 
     public static void main(String[] args) {
-        System.setProperty("hadoop.home.dir", "/Users/dailiang/Documents/Software/hadoop-2.10.0");
         try {
             int returnCode =  ToolRunner.run(new SecondSortMR(),args);
             System.exit(returnCode);
