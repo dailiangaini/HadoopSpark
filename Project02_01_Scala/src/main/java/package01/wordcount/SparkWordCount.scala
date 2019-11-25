@@ -15,6 +15,8 @@ object SparkWordCount {
     val lines = input.flatMap(line => line.split(" "))
     val count = lines.map(word => (word, 1)).reduceByKey { case (x, y) => x + y }
     count.foreach(println)
+    count.foreach(temp => println(temp._1 + " ~~" + temp._2))
+    count.foreach(key => println(key))
     sc.stop()
   }
 }

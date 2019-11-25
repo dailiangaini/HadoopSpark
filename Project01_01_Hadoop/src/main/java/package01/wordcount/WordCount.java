@@ -11,6 +11,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
@@ -53,10 +54,33 @@ public class WordCount {
         }
     }
 
+    public static void deleteFile(File file){
+        if (!file.exists()) {
+            return;
+        }
+
+        if (file.isFile()) {
+            file.delete();
+        } else {
+            File[] files = file.listFiles();
+            for (File f : files) {
+                deleteFile(f);
+            }
+            file.delete();
+        }
+    }
+
     public static void main(String[] args) throws Exception {
+        String inputFile = "/Users/dailiang/Documents/Code/StudyBigData/HadoopSpark/Project01_01_Hadoop/input/11";
+        String outputDir = "/Users/dailiang/Documents/Code/StudyBigData/HadoopSpark/Project01_01_Hadoop/output";
+        deleteFile(new File(outputDir));
         Configuration conf = new Configuration();
-        conf.set("mapreduce.framework.name", "yarn");
-        conf.set("fs.defaultFS","hdfs://bigdata-senior01.home.com:9000");
+//        conf.set("mapreduce.framework.name", "yarn");
+//        conf.set("fs.defaultFS","hdfs://node2:9000");
+
+        //conf.set("mapreduce.app-submission.corss-paltform", "true");
+        //conf.set("mapreduce.framework.name", "local");
+
         Job job = Job.getInstance(conf, "word count");
         job.setJarByClass(WordCount.class);
         job.setMapperClass(TokenizerMapper.class);
@@ -64,8 +88,8 @@ public class WordCount {
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-        FileInputFormat.addInputPath(job, new Path("/Users/dailiang/Documents/Code/StudyBigData/HadoopSpark/Project01_01_Hadoop/input/11"));
-        FileOutputFormat.setOutputPath(job, new Path("/Users/dailiang/Documents/Code/StudyBigData/HadoopSpark/Project01_01_Hadoop/output"));
+        FileInputFormat.addInputPath(job, new Path(inputFile));
+        FileOutputFormat.setOutputPath(job, new Path(outputDir));
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }

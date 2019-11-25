@@ -12,5 +12,6 @@
         <module name="Project02_02_Spark" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>
