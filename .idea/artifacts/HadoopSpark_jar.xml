@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HadoopSpark:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HadoopSpark_jar</output-path>
+    <root id="archive" name="HadoopSpark.jar">
+      <element id="module-output" name="HadoopSpark" />
+      <element id="module-output" name="Project02_02_Spark" />
+      <element id="module-output" name="Project02_01_Scala" />
+      <element id="module-output" name="Project01_01_Hadoop" />
+      <element id="module-output" name="Project01_02_Hdfs" />
+    </root>
+  </artifact>
+</component>
