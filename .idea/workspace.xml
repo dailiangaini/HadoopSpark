@@ -6,33 +6,45 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package00/hdfs/Hdfs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package06/hbase/HBaseStudy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package06/hbase/HBaseStudyNew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package07/hive/00_operation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package07/hive/HiveJDBC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package07/hive/HiveJdbcClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package07/hive/HiveTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package08/hive_hbase/00_operation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/core-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/hadoop-env.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/hdfs-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/mapred-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/yarn-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+    <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="secondSort">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/input/22" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test3.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test4.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test5.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test6.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test7.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test_3.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test3.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test4.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test5.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test6.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test7.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Employee.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Equal.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/MyPoint.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Person.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Point.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Test1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Test2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Test3.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Test4.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Test5.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package05/transformation/Study01_ValueTransformation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package05/transformation/Study02_KeyValueTransformation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package06/actions/Study03_Actions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output/.part-r-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output/_SUCCESS" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package06/hbase/00_operation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output/part-r-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output2/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output2/.part-r-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output2/.part-r-00001.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output2/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output2/part-r-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output2/part-r-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package01/wordcount/SparkWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package01/wordcount/SparkWordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +62,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="package-info" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -98,11 +112,11 @@
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/org/apache/hadoop/io" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="package03.scalaTest2" />
+      <recent name="package02.scalaTest" />
       <recent name="package06.hbase" />
       <recent name="package03.secondsort" />
       <recent name="package02.tq.comparator" />
-      <recent name="package02.tq.reduce" />
-      <recent name="package02.tq" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
@@ -120,93 +134,79 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HiveTest">
+  <component name="RunManager" selected="Application.StudySpark">
+    <configuration name="StudySpark" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package05.transformation.Study01_ValueTransformation" />
+      <module name="Project02_01_Scala" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package05.transformation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package04.scalaTest3.Test2" />
+      <module name="Project02_01_Scala" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package04.scalaTest3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test3" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package04.scalaTest3.Test3" />
+      <module name="Project02_01_Scala" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package04.scalaTest3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test4" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package04.scalaTest3.Test4" />
+      <module name="Project02_01_Scala" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package04.scalaTest3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test5" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package04.scalaTest3.Test5" />
+      <module name="Project02_01_Scala" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package04.scalaTest3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HiveJDBC.createDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project01_01_Hadoop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package07.hive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="package07.hive" />
-      <option name="MAIN_CLASS_NAME" value="package07.hive.HiveJDBC" />
-      <option name="METHOD_NAME" value="createDatabase" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HiveJDBC.createTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project01_01_Hadoop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package07.hive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="package07.hive" />
-      <option name="MAIN_CLASS_NAME" value="package07.hive.HiveJDBC" />
-      <option name="METHOD_NAME" value="createTable" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HiveJDBC.showDatabases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project01_01_Hadoop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package07.hive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="package07.hive" />
-      <option name="MAIN_CLASS_NAME" value="package07.hive.HiveJDBC" />
-      <option name="METHOD_NAME" value="showDatabases" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HiveJDBC.showTables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project01_01_Hadoop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package07.hive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="package07.hive" />
-      <option name="MAIN_CLASS_NAME" value="package07.hive.HiveJDBC" />
-      <option name="METHOD_NAME" value="showTables" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Project01_01_Hadoop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package07.hive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="package07.hive" />
-      <option name="MAIN_CLASS_NAME" value="package07.hive.HiveTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,19 +228,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HiveJDBC.createDatabase" />
-      <item itemvalue="JUnit.HiveJDBC.showDatabases" />
-      <item itemvalue="JUnit.HiveJDBC.createTable" />
-      <item itemvalue="JUnit.HiveJDBC.showTables" />
-      <item itemvalue="JUnit.HiveTest" />
+      <item itemvalue="Application.Test2" />
+      <item itemvalue="Application.Test3" />
+      <item itemvalue="Application.Test4" />
+      <item itemvalue="Application.Test5" />
+      <item itemvalue="Application.StudySpark" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HiveTest" />
-        <item itemvalue="JUnit.HiveJDBC.showTables" />
-        <item itemvalue="JUnit.HiveJDBC.createTable" />
-        <item itemvalue="JUnit.HiveJDBC.showDatabases" />
-        <item itemvalue="JUnit.HiveJDBC.createDatabase" />
+        <item itemvalue="Application.StudySpark" />
+        <item itemvalue="Application.Test5" />
+        <item itemvalue="Application.Test4" />
+        <item itemvalue="Application.Test3" />
+        <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +258,7 @@
       <workItem from="1574730863547" duration="164000" />
       <workItem from="1574731052533" duration="9328000" />
       <workItem from="1574817575215" duration="6477000" />
-      <workItem from="1574839607449" duration="3604000" />
+      <workItem from="1574839607449" duration="31018000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1574314150826</created>
@@ -288,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574657142324</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完成hive、hbase">
+      <created>1574846599537</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574846599537</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +319,7 @@
     <MESSAGE value="项目初始化" />
     <MESSAGE value="完成wordCount" />
     <MESSAGE value="secondSort" />
-    <option name="LAST_COMMIT_MESSAGE" value="secondSort" />
+    <MESSAGE value="完成hive、hbase" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成hive、hbase" />
   </component>
 </project>
