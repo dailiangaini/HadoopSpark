@@ -6,45 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="secondSort">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/input/22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test1.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test4.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test5.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test6.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test7.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package02/scalaTest/Test_3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test1.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test4.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test5.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test6.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package03/scalaTest2/Test7.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Employee.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Equal.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/MyPoint.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Person.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Point.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Test1.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Test2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Test3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Test4.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/Test5.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package04/scalaTest3/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package05/transformation/Study01_ValueTransformation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package05/transformation/Study02_KeyValueTransformation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package06/actions/Study03_Actions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package06/actions/Test.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/META-INF/Project01_01_Hadoop.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package01/wordcount/SparkWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package01/wordcount/SparkWordCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package05/transformation/Study01_ValueTransformation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package05/transformation/Study01_ValueTransformation.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package05/transformation/Study02_KeyValueTransformation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package05/transformation/Study02_KeyValueTransformation.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package06/actions/Study03_Actions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package06/actions/Study03_Actions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/target/classes/package01/wordcount/SparkWordCount$$anonfun$1.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +63,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package08/hive_hbase" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.1560606" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -112,11 +83,11 @@
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/org/apache/hadoop/io" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="package06.actions" />
       <recent name="package03.scalaTest2" />
       <recent name="package02.scalaTest" />
       <recent name="package06.hbase" />
       <recent name="package03.secondsort" />
-      <recent name="package02.tq.comparator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
@@ -134,9 +105,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StudySpark">
-    <configuration name="StudySpark" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="package05.transformation.Study01_ValueTransformation" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="SparkWordCount" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package01.wordcount.SparkWordCount" />
+      <module name="Project02_01_Scala" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package01.wordcount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Study02_KeyValueTransformation" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package05.transformation.Study02_KeyValueTransformation" />
       <module name="Project02_01_Scala" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -149,13 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="package04.scalaTest3.Test2" />
+    <configuration name="Study03_Actions" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package06.actions.Study03_Actions" />
       <module name="Project02_01_Scala" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package04.scalaTest3.*" />
+          <option name="PATTERN" value="package06.actions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,13 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="package04.scalaTest3.Test3" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package06.actions.Test" />
       <module name="Project02_01_Scala" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package04.scalaTest3.*" />
+          <option name="PATTERN" value="package06.actions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,27 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test4" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="package04.scalaTest3.Test4" />
+    <configuration name="Test7" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package03.scalaTest2.Test7" />
       <module name="Project02_01_Scala" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package04.scalaTest3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test5" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="package04.scalaTest3.Test5" />
-      <module name="Project02_01_Scala" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package04.scalaTest3.*" />
+          <option name="PATTERN" value="package03.scalaTest2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -228,19 +199,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test2" />
-      <item itemvalue="Application.Test3" />
-      <item itemvalue="Application.Test4" />
-      <item itemvalue="Application.Test5" />
-      <item itemvalue="Application.StudySpark" />
+      <item itemvalue="Application.Study02_KeyValueTransformation" />
+      <item itemvalue="Application.Study03_Actions" />
+      <item itemvalue="Application.Test7" />
+      <item itemvalue="Application.SparkWordCount" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StudySpark" />
-        <item itemvalue="Application.Test5" />
-        <item itemvalue="Application.Test4" />
-        <item itemvalue="Application.Test3" />
-        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Study03_Actions" />
+        <item itemvalue="Application.SparkWordCount" />
+        <item itemvalue="Application.Test7" />
+        <item itemvalue="Application.Study02_KeyValueTransformation" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +229,7 @@
       <workItem from="1574730863547" duration="164000" />
       <workItem from="1574731052533" duration="9328000" />
       <workItem from="1574817575215" duration="6477000" />
-      <workItem from="1574839607449" duration="31018000" />
+      <workItem from="1574839607449" duration="49022000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1574314150826</created>
@@ -295,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574846599537</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加scala和spark练习">
+      <created>1574950649385</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574950649386</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +298,7 @@
     <MESSAGE value="完成wordCount" />
     <MESSAGE value="secondSort" />
     <MESSAGE value="完成hive、hbase" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成hive、hbase" />
+    <MESSAGE value="添加scala和spark练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加scala和spark练习" />
   </component>
 </project>

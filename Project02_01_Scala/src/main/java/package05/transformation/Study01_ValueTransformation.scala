@@ -76,10 +76,20 @@ object Study01_ValueTransformation {
      *  将RDD的每个分区中类型为T的元素转换为数组Array[T]
      */
     def testGlop(): Unit = {
-      val a = sc.parallelize(1 to 100, 1)
+      val a = sc.parallelize(1 to 10, 2)
       val glomValue: RDD[Array[Int]] = a.glom
       val arr: Array[Array[Int]] = glomValue.collect()
+      arr.foreach(x=>{
+        x.foreach(y=>print(y + " "))
+        println()
+      })
+
+      /**
+       * 1 2 3 4 5
+       * 6 7 8 9 10
+       */
     }
+
 
     /**
      *  5.union
@@ -88,17 +98,29 @@ object Study01_ValueTransformation {
     def testUnion(): Unit = {
       val a =sc.parallelize(1 to 3, 1)
       var b = sc.parallelize(1 to 7, 1)
+      val ints: Array[Int] = a.union(b).collect()
+      ints.foreach(y=>print(y + " "))
+
+      /**
+       * 1 2 3 1 2 3 4 5 6 7
+       */
     }
+
 
     /**
      * 6.cartesian
      * 对两个RDD中所有元素进行笛卡尔积操作。
      */
     def testCartesian(): Unit = {
-      val x = sc.parallelize((1 to 5).toList)
-      val y = sc.parallelize((6 to 10).toList)
+      val x = sc.parallelize((1 to 3).toList)
+      val y = sc.parallelize((6 to 9).toList)
       val rdd: RDD[(Int, Int)] = x.cartesian(y)
       val tuples: Array[(Int, Int)] = rdd.collect()
+      tuples.foreach(y=>print(y + " "))
+
+      /**
+       * (1,6) (1,7) (1,8) (1,9) (2,6) (2,7) (2,8) (2,9) (3,6) (3,7) (3,8) (3,9)
+       */
     }
 
     /**
@@ -109,6 +131,16 @@ object Study01_ValueTransformation {
       val a = sc.parallelize(1 to 9, 3)
       val rdd: RDD[(String, Iterable[Int])] = a.groupBy(x => {if (x%2 == 0) "even" else "odd"})
       val tuples: Array[(String, Iterable[Int])] = rdd.collect()
+      tuples.foreach(x=>{
+        print(x._1 + ":")
+        x._2.foreach(y=>print(y + " "))
+        println()
+      })
+
+      /**
+       * even:2 4 6 8
+       * odd:1 3 5 7 9
+       */
     }
 
     /**
@@ -118,7 +150,12 @@ object Study01_ValueTransformation {
     def testFilter(): Unit = {
       val a = sc.parallelize(1 to 10, 3)
       val b = a.filter( _ % 2==0)
-      b.collect()
+      val ints: Array[Int] = b.collect()
+      ints.foreach(y=>print(y + " "))
+
+      /**
+       * 2 4 6 8 10
+       */
     }
 
     /**
@@ -127,8 +164,14 @@ object Study01_ValueTransformation {
      */
     def testDistinct(): Unit = {
       val a = sc.parallelize(List("Gnu", "Cat", "Rat", "Dog", "Gnu"),  2)
-      a.distinct().collect()
+      val strings: Array[String] = a.distinct().collect()
+      strings.foreach(y=>print(y + " "))
+
+      /**
+       * Dog Cat Gnu Rat
+       */
     }
+
 
     /**
      * 10.subtract
@@ -138,16 +181,29 @@ object Study01_ValueTransformation {
     def testSubtract(): Unit = {
       val a = sc.parallelize(1 to 9, 3)
       val b = sc.parallelize(1 to 3, 3)
-      val c = a.subtract(b)
+      val c: RDD[Int] = a.subtract(b)
+      val ints: Array[Int] = c.collect()
+      ints.foreach(y=>print(y + " "))
+
+      /**
+       * 6 9 4 7 5 8
+       */
     }
+
 
     /**
      * 11.sample
      * 以指定的随机种子随机抽样出数量为fraction的数量，withReplacement表示抽出的数据是否放回，true为有放回抽样，false为无放回抽样。
      */
     def testSample(): Unit = {
-      val a = sc.parallelize(1 to 1000, 3)
-      a.sample(false, 0.1, 0).count()
+      val a = sc.parallelize(1 to 100, 3)
+      val rdd: RDD[Int] = a.sample(false, 0.1, 0)
+      val ints: Array[Int] = rdd.collect()
+      ints.foreach(y=>print(y + " "))
+
+      /**
+       * 10 47 55 73 76 84 87 88 91 92 95 98
+       */
     }
 
     /**
@@ -157,7 +213,12 @@ object Study01_ValueTransformation {
      */
     def testTakesample(): Unit = {
       val x = sc.parallelize(1 to 1000, 3)
-      x.takeSample(true, 100, 1)
+      val ints: Array[Int] = x.takeSample(true, 10, 1)
+      ints.foreach(y=>print(y + " "))
+
+      /**
+       * 630 743 715 404 700 568 822 222 854 586
+       */
     }
 
     /**
@@ -166,9 +227,15 @@ object Study01_ValueTransformation {
      */
     def testCache_Persist(): Unit = {
       val c =  sc.parallelize(List("Gnu", "Cat", "Rat", "Dog", "Gnu"),  2)
-      c.getStorageLevel
+      println(c.getStorageLevel)
       c.cache()
-      c.getStorageLevel
+      println(c.getStorageLevel)
+
+      /**
+       * StorageLevel(1 replicas)
+       * StorageLevel(memory, deserialized, 1 replicas)
+       */
     }
+
   }
 }

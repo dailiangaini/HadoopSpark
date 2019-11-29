@@ -10,9 +10,10 @@ import org.apache.spark.{SparkConf, SparkContext}
  * @Description:
  * @Date: 2019/11/28 16:34
  */
-object Study03_Actions {
+object Test {
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setMaster("spark://localhost:7077").setAppName("StudySpark22")
+    val conf = new SparkConf().setMaster("local").setAppName("TTT222")
+      .set("spark.dynamicAllocation.enabled", "false")
     val sc = new SparkContext(conf)
 
     /**
