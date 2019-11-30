@@ -20,9 +20,10 @@ import java.util.Iterator;
  */
 public class SparkWordCount {
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setAppName("testWordCount").setMaster("local");
+        SparkConf conf = new SparkConf().setAppName("testWordCount").setMaster("spark://localhost:7077");
         JavaSparkContext sc = new JavaSparkContext(conf);
-        JavaRDD<String> lines = sc.textFile("/Users/dailiang/Documents/Code/StudyBigData/HadoopSpark/Project01_01_Hadoop/input/11");
+//        JavaRDD<String> lines = sc.textFile("/Users/dailiang/Documents/Code/StudyBigData/HadoopSpark/Project01_01_Hadoop/input/11");
+        JavaRDD<String> lines = sc.textFile("/opt/test/11");
 
         JavaRDD<String> words = lines.flatMap(new FlatMapFunction<String, String>() {
             private static final long serialVersionUID = 9166467038300894254L;
