@@ -12,9 +12,11 @@ import org.apache.spark.{SparkConf, SparkContext}
  */
 object Test {
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setMaster("local").setAppName("TTT222")
+    val conf = new SparkConf().setMaster("spark://localhost:7077").setAppName("TTT222")
       .set("spark.dynamicAllocation.enabled", "false")
+      .set("spark.executor.memory", "4g")
     val sc = new SparkContext(conf)
+    sc.addJar("/Users/dailiang/Documents/Code/StudyBigData/HadoopSpark/out/artifacts/HadoopSpark_jar/HadoopSpark.jar")
 
     /**
      * 1.foreach

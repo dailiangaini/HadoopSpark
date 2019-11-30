@@ -4,10 +4,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
-import org.apache.spark.api.java.function.FlatMapFunction;
-import org.apache.spark.api.java.function.Function2;
-import org.apache.spark.api.java.function.PairFunction;
-import org.apache.spark.api.java.function.VoidFunction;
+import org.apache.spark.api.java.function.*;
 import scala.Tuple2;
 
 import java.util.Arrays;
@@ -20,10 +17,13 @@ import java.util.Iterator;
  */
 public class SparkWordCount {
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setAppName("testWordCount").setMaster("spark://localhost:7077");
+        SparkConf conf = new SparkConf().setAppName("testWordCount").setMaster("spark://localhost:7077")
+                .set("spark.dynamicAllocation.enabled", "false")
+                .set("spark.executor.memory", "4g");
         JavaSparkContext sc = new JavaSparkContext(conf);
+        sc.addJar("/Users/dailiang/Documents/Code/StudyBigData/HadoopSpark/out/artifacts/HadoopSpark_jar/HadoopSpark.jar");
 //        JavaRDD<String> lines = sc.textFile("/Users/dailiang/Documents/Code/StudyBigData/HadoopSpark/Project01_01_Hadoop/input/11");
-        JavaRDD<String> lines = sc.textFile("/opt/test/11");
+        JavaRDD<String> lines = sc.textFile("hdfs://localhost:9000/opt/test/11");
 
         JavaRDD<String> words = lines.flatMap(new FlatMapFunction<String, String>() {
             private static final long serialVersionUID = 9166467038300894254L;
