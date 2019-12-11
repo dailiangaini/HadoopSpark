@@ -15,7 +15,6 @@
 -->
 
 <!-- Put site-specific property overrides in this file. -->
-
 <configuration>
 	<property>
 		<name>dfs.replication</name>
@@ -29,11 +28,12 @@
         <!--把路径换成本地的name坐在位置-->
         <property>
             <name>dfs.namenode.name.dir</name>
-            <value>file:/Users/dailiang/Documents/Software/hadoop-2.10.0/mydata/name</value>
+            <value>file:/opt/hadoop-2.7.7/mydata/name</value>
         </property>
         <!--在本地新建一个存放hadoop数据的文件夹，然后将路径在这里配置一下-->
-        <property>
-            <name>dfs.datanode.data.dir</name>
-            <value>file:/Users/dailiang/Documents/Software/hadoop-2.10.0/mydata/data</value>
-        </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:/opt/hadoop-2.7.7/mydata/data</value>
+    </property>
 </configuration>
+

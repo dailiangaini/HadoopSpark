@@ -7,186 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/input/people.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/input/people.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package07/sparksql/TestDataFrame1.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package07/sparksql/TestDataFrame2.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package07/sparksql/TestDataFrame3.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package07/sparksql/TestDataFrame_Hive.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package07/sparksql/TestDataFrame_MySql.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/resources/hive-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/db.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/dbex.lck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/log/log.ctrl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/log/log1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/log/logmirror.ctrl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c10.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c101.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c111.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c121.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c130.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c141.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c150.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c161.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c171.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c180.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c191.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c1a1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c1b1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c1c0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c1d1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c1e0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c1f1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c20.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c200.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c211.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c221.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c230.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c241.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c251.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c260.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c271.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c281.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c290.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c2a1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c2b1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c2c1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c2d0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c2e1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c2f0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c300.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c31.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c311.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c321.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c331.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c340.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c351.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c361.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c371.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c380.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c391.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c3a1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c3b1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c3c0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c3d1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c3e1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c3f1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c400.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c41.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c411.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c421.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c430.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c441.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c451.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c461.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c470.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c481.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c490.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c4a1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c4b0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c4c1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c4d1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c4e1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c4f0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c501.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c51.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c510.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c521.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c530.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c541.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c550.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c561.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c570.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c581.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c590.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c5a1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c5b0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c5c1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c5d0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c5e1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c5f0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c60.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c601.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c610.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c621.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c630.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c641.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c650.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c661.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c670.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c681.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c690.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c6a1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c6b0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c6c1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c6d0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c6e1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c6f0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c701.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c71.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c711.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c721.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c731.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c741.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c751.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c761.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c771.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c781.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c791.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c7a1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c7b1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c7c1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c7d1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c7e1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c7f1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c801.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c81.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c811.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c821.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c831.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c840.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c851.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c860.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c871.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c880.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c891.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c8a0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c8b1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c8c1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c8d1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c8e1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c8f1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c90.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c901.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c911.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c920.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c931.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c940.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c951.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c960.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c971.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c981.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c990.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c9a1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c9b1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c9c0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c9d1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c9e0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/c9f1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/ca01.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/ca1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/ca11.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/ca21.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/cb1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/cc0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/cd1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/ce1.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metastore_db/seg0/cf0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package00/hdfs/Hdfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package00/hdfs/Hdfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package05/secondsort/SecondSortMR.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package05/secondsort/SecondSortMR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package06/hbase/HBaseStudy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package06/hbase/HBaseStudy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package06/hbase/HBaseStudyNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package06/hbase/HBaseStudyNew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/core-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/core-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/hadoop-env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/hadoop-env.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/hdfs-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/hdfs-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/yarn-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/yarn-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/core-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/core-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/hadoop-env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/hadoop-env.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/hdfs-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/hdfs-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/org/apache/hadoop/io/IOUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/org/apache/hadoop/io/IOUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package00/hdfs/Hdfs.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package00/hdfs/Hdfs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package05/secondsort/SecondSortMR$SortMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package05/secondsort/SecondSortMR$SortMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package05/secondsort/SecondSortMR$SortReducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package05/secondsort/SecondSortMR$SortReducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package05/secondsort/SecondSortMR.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package05/secondsort/SecondSortMR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package06/hbase/HBaseStudy.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package06/hbase/HBaseStudy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package06/hbase/HBaseStudyNew.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package06/hbase/HBaseStudyNew.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/yarn-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/yarn-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/Project02_01_Scala.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package07/sparksql/TestDataFrame_Hive.scala" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package07/sparksql/TestDataFrame_Hive.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_02_Spark/Project02_02_Spark.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_02_Spark/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_02_Spark/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -233,23 +80,26 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project03_01_Spark_Python/com/spark" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.1560606" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="package03.secondsort" />
+      <recent name="package02.tq.comparator" />
+      <recent name="package02.tq.reduce" />
+      <recent name="package02.tq.map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
       <recent name="$PROJECT_DIR$/Project03_01_Spark_Python/com/spark" />
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package08/hive_hbase" />
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package07/hive" />
-      <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package05/secondsort" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -259,11 +109,8 @@
       <recent name="package02.scalaTest" />
       <recent name="package06.hbase" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="package03.secondsort" />
-      <recent name="package02.tq.comparator" />
-      <recent name="package02.tq.reduce" />
-      <recent name="package02.tq.map" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -278,14 +125,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestDataFrame_Hive">
-    <configuration name="TestDataFrame1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="package07.sparksql.TestDataFrame1" />
-      <module name="Project02_01_Scala" />
+  <component name="RunManager" selected="Application.HBaseStudy">
+    <configuration name="HBaseStudy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package06.hbase.HBaseStudy" />
+      <module name="Project01_01_Hadoop" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package07.sparksql.*" />
+          <option name="PATTERN" value="package06.hbase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -293,13 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataFrame2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="package07.sparksql.TestDataFrame2" />
-      <module name="Project02_01_Scala" />
+    <configuration name="Hdfs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package00.hdfs.Hdfs" />
+      <module name="Project01_01_Hadoop" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package07.sparksql.*" />
+          <option name="PATTERN" value="package00.hdfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -372,19 +219,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestDataFrame1" />
-      <item itemvalue="Application.TestDataFrame2" />
       <item itemvalue="Application.TestDataFrame3" />
       <item itemvalue="Application.TestDataFrame_MySql" />
       <item itemvalue="Application.TestDataFrame_Hive" />
+      <item itemvalue="Application.Hdfs" />
+      <item itemvalue="Application.HBaseStudy" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HBaseStudy" />
+        <item itemvalue="Application.Hdfs" />
         <item itemvalue="Application.TestDataFrame_Hive" />
         <item itemvalue="Application.TestDataFrame_MySql" />
         <item itemvalue="Application.TestDataFrame3" />
-        <item itemvalue="Application.TestDataFrame2" />
-        <item itemvalue="Application.TestDataFrame1" />
       </list>
     </recent_temporary>
   </component>
@@ -404,7 +251,9 @@
       <workItem from="1574817575215" duration="6477000" />
       <workItem from="1574839607449" duration="49080000" />
       <workItem from="1575020387552" duration="1031000" />
-      <workItem from="1575022219642" duration="6136000" />
+      <workItem from="1575022219642" duration="8621000" />
+      <workItem from="1575704899076" duration="1217000" />
+      <workItem from="1576035138526" duration="2261000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1574314150826</created>
@@ -469,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575078113043</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="完成SparkSql测试">
+      <created>1575081388879</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575081388879</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +354,8 @@
     <MESSAGE value="spark练习" />
     <MESSAGE value="添加python项目" />
     <MESSAGE value="完成测试集群提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成测试集群提交" />
+    <MESSAGE value="完成SparkSql测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成SparkSql测试" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HadoopSpark$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1575074337913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project03_01_Spark_Python/com/spark" />

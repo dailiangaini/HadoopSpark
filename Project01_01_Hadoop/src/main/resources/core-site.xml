@@ -15,7 +15,6 @@
 -->
 
 <!-- Put site-specific property overrides in this file. -->
-
 <configuration>
 	<property>
     <name>fs.defaultFS</name>
@@ -25,6 +24,17 @@
   <!--用来指定hadoop运行时产生文件的存放目录  自己创建-->
   <property>
     <name>hadoop.tmp.dir</name>
-    <value>/Users/dailiang/Documents/Software/hadoop-2.10.0/tmp</value>
+    <value>/opt/hadoop-2.7.7/tmp</value>
   </property>
+
+  <property>
+    <name>hadoop.proxyuser.dailiang.hosts</name>
+    <value>*</value>
+ </property>
+ <property>
+    <name>hadoop.proxyuser.dailiang.groups</name>
+    <value>*</value>
+ </property>
+
 </configuration>
+

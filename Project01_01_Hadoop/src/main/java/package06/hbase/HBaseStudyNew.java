@@ -15,7 +15,7 @@ import java.io.IOException;
  * @Date: 2019/11/26 10:54
  */
 public class HBaseStudyNew {
-    public static Configuration configuration; // 管理Hbase的配置信息
+    /*public static Configuration configuration; // 管理Hbase的配置信息
     public static Connection connection; // 管理Hbase连接
     public static Admin admin; // 管理Hbase数据库的信息
     public static void main(String[] args) throws IOException {
@@ -44,12 +44,12 @@ public class HBaseStudyNew {
         }
     }
 
-    /**
+    *//**
      * 创建表
      * @param myTableName 表名
      * @param colFamily 列族数组
      * @throws IOException
-     */
+     *//*
     public static void createTable(String myTableName,String[] colFamily) throws IOException{
         TableName tableName = TableName.valueOf(myTableName);
         if(admin.tableExists(tableName)){
@@ -67,14 +67,14 @@ public class HBaseStudyNew {
 
 
     // 添加单元格数据
-    /*
+    *//*
      * @param tableName 表名
      * @param rowKey 行键
      * @param colFamily 列族
      * @param col 列限定符
      * @param val 数据
      * @thorws Exception
-     * */
+     * *//*
     public static void insertData(String tableName,String rowKey,String colFamily,String col,String val) throws IOException{
         Table table = connection.getTable(TableName.valueOf(tableName));
         Put put = new Put(rowKey.getBytes());
@@ -84,13 +84,13 @@ public class HBaseStudyNew {
     }
 
     //浏览数据
-    /*
+    *//*
      * @param tableName 表名
      * @param rowKey 行
      * @param colFamily 列族
      * @param col 列限定符
      * @throw IOException
-     * */
+     * *//*
     public static void getData(String tableName,String rowKey,String colFamily,String col) throws IOException{
         Table table = connection.getTable(TableName.valueOf(tableName));
         Get get = new Get(rowKey.getBytes());
@@ -115,7 +115,7 @@ public class HBaseStudyNew {
         }catch (IOException e){
             e.printStackTrace();
         }
-    }
+    }*/
 
 }
 

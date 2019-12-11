@@ -16,4 +16,14 @@ object TestDataFrame_Hive {
     sqlContext.sql("select * from testdb.emp").show()
   }
 
+  /**
+   * 需要在resource文件夹中，添加hive-site.xml
+   * +-----+-------+---------+---+----------+------+----+------+
+   * |empno|empname|      job|mgr|  hiredate|salary|comm|deptno|
+   * +-----+-------+---------+---+----------+------+----+------+
+   * |  101| 'duan'|     'it'|  1|'hiredate'| 100.0|10.0|     1|
+   * |  102|'duan2'|'product'|  1|    '2018'| 200.0|20.0|     1|
+   * +-----+-------+---------+---+----------+------+----+------+
+   */
+
 }

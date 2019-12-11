@@ -25,8 +25,8 @@ public class HBaseStudy {
     // 操作数据库之前,建立连接
     public static void init(){
         configuration = HBaseConfiguration.create();
-        configuration.set("hbase.rootdir","hdfs://master:9000/hbase");
-        configuration.set("hbase.zookeeper.quorum","master,slave1,slave2"); // 设置zookeeper节点
+        configuration.set("hbase.rootdir","hdfs://localhost:9000/hbase");
+        configuration.set("hbase.zookeeper.quorum","localhost"); // 设置zookeeper节点
         configuration.set("hbase.zookeeper.property.clientPort","2181"); // 设置zookeeper节点
         try{
             connection = ConnectionFactory.createConnection(configuration);

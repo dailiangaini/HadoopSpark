@@ -23,10 +23,10 @@ public class Hdfs {
 
     public static void main(String[] args) throws Exception{
         URI uri = new URI("hdfs://localhost:9000");
-        // mkdirs(uri);
-        // createNewFile(uri);
-        // addSomeThings(uri);
-        // appendSomeThings(uri);
+         mkdirs(uri);
+         createNewFile(uri);
+         addSomeThings(uri);
+         appendSomeThings(uri);
         readFile(uri);
 
     }
