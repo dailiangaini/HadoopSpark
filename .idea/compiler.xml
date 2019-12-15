@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Project01_03_Electricity_Log" />
         <module name="Project02_01_Scala" />
-        <module name="Project01_02_Hdfs" />
-        <module name="Project01_01_Hadoop" />
         <module name="Project02_02_Spark" />
+        <module name="Project01_01_Hadoop" />
+        <module name="Project01_02_Hdfs" />
+        <module name="Project02_03_Traffic_Teach" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

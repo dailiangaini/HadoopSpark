@@ -81,6 +81,12 @@ public class WordCount {
         //conf.set("mapreduce.app-submission.corss-paltform", "true");
         //conf.set("mapreduce.framework.name", "local");
 
+
+        // 设置本地运行
+        conf.set("mapreduce.framework.name", "local");
+        // 本地文件系统
+        conf.set("fs.defaultFS", "file:///");
+
         Job job = Job.getInstance(conf, "word count");
         job.setJarByClass(WordCount.class);
         job.setMapperClass(TokenizerMapper.class);

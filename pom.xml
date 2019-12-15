@@ -13,6 +13,8 @@
         <module>Project02_02_Spark</module>
         <module>Project02_01_Scala</module>
         <module>Project01_02_Hdfs</module>
+        <module>Project01_03_Electricity_Log</module>
+        <module>Project02_03_Traffic_Teach</module>
     </modules>
 
     <properties>
@@ -20,7 +22,11 @@
         <hive.version>2.3.6</hive.version>
         <hbase.version>1.4.12</hbase.version>
         <zookeeper.version>3.4.14</zookeeper.version>
-        <kafka.version>2.12-2.3.1</kafka.version>
+
+        <kafka.version.full>2.12-2.3.1</kafka.version.full>
+        <kafka.version.prefix>2.12</kafka.version.prefix>
+        <kafka.version>2.3.1</kafka.version>
+
         <flume.version>1.9.0</flume.version>
         <sqoop.version>1.4.7</sqoop.version>
         <elasticsearch.version>7.5.0</elasticsearch.version>
@@ -31,7 +37,47 @@
         <storm.version>1.2.3</storm.version>
 
         <mysql-connector.version>5.1.48</mysql-connector.version>
+        <fastjson.version>1.2.62</fastjson.version>
+        <fastutil.version>8.3.0</fastutil.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>oschina-repos</id>
+            <name>Oschina Releases</name>
+            <url>http://maven.oschina.net/content/groups/public</url>
+        </repository>
+
+        <repository>
+            <id>aliyun-repos</id>
+            <name>aliyun Releases</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+
+        <repository>
+            <id>java-repos</id>
+            <name>Java Repository</name>
+            <url>https://maven.java.net/content/repositories/public/</url>
+        </repository>
+
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>com.github.promeg</id>
+            <name>com.github.promeg</name>
+            <url>https://mvnrepository.com/artifact/com.github.promeg/tinypinyin</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 
 </project>
