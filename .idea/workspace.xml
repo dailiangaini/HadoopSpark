@@ -2,22 +2,64 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="HadoopSpark:jar" />
+      <artifact name="HadoopSpark:jar2" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="">
+    <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="添加依赖">
+      <change afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/org/apache/hadoop/io/IOUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package01/log/RandomLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/common/DateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/common/EventLogConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/common/GlobalConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/common/KpiType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr/AnalyserLogDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr/AnalyserLogDataRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/test/mr_test/AnalyserLogDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/test/mr_test/AnalyserLogDataReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/test/mr_test/AnalyserLogDataRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/test/mr_test2/AnalyserLogDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/test/mr_test2/AnalyserLogDataReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/test/mr_test2/AnalyserLogDataRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/util/IPSeekerExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/util/LoggerUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/util/UserAgentUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/util/ip/IPSeeker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/util/MemberUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/util/TimeChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/util/UrlUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/util/EJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/util/JdbcManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/util/TimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/hadoop-env.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/mapred-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/output-collector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/qqwry.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/query-mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/transformer-env.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/yarn-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/test/java/package02/TestCrc32.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/test/java/package02/TestIpSeeker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/test/java/package02/TestIpSeekerExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/HadoopSpark_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/HadoopSpark_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output/._SUCCESS.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output/.part-r-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output/_SUCCESS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/output/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/input/11" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/input/11" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package01/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package01/wordcount/WordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package03/secondsort/SecondSortMR.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package03/secondsort/SecondSortMR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package01/wordcount/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package01/wordcount/WordCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package03/secondsort/SecondSortMR.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_01_Hadoop/target/classes/package03/secondsort/SecondSortMR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/Project01_03_Electricity_Log.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/Project02_03_Traffic_Teach.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/HadoopSpark_jar/HadoopSpark.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,10 +74,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="package-info" />
         <option value="Python Script" />
         <option value="Package Object" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,16 +98,23 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/log4j.properties" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.1560606" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -78,43 +127,31 @@
       <recent name="package02.tq.map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Project03_01_Spark_Python/com/spark" />
-      <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package08/hive_hbase" />
-      <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package07/hive" />
-      <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/java/package05/secondsort" />
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr" />
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr_test2" />
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr_test" />
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl" />
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="package02.hadoop.etl.mr" />
+      <recent name="package02" />
       <recent name="package07.sparksql" />
       <recent name="package06.actions" />
       <recent name="package03.scalaTest2" />
-      <recent name="package02.scalaTest" />
-      <recent name="package06.hbase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.WordCount">
-    <configuration name="HBaseStudy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package06.hbase.HBaseStudy" />
-      <module name="Project01_01_Hadoop" />
+  <component name="RunManager" selected="Application.AnalyserLogDataRunner">
+    <configuration name="AnalyserLogDataRunner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.hadoop.etl.mr_test.AnalyserLogDataRunner" />
+      <module name="Project01_03_Electricity_Log" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package06.hbase.*" />
+          <option name="PATTERN" value="package02.hadoop.etl.mr_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,13 +159,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Hdfs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package00.hdfs.Hdfs" />
-      <module name="Project01_01_Hadoop" />
+    <configuration name="AnalyserLogDataRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.hadoop.etl.test.mr_test.AnalyserLogDataRunner" />
+      <module name="Project01_03_Electricity_Log" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package00.hdfs.*" />
+          <option name="PATTERN" value="package02.hadoop.etl.test.mr_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,13 +173,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataFrame_Hive" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="package07.sparksql.TestDataFrame_Hive" />
-      <module name="Project02_01_Scala" />
+    <configuration name="AnalyserLogDataRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.hadoop.etl.mr.AnalyserLogDataRunner" />
+      <module name="Project01_03_Electricity_Log" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package07.sparksql.*" />
+          <option name="PATTERN" value="package02.hadoop.etl.mr.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,13 +187,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDataFrame_MySql" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="package07.sparksql.TestDataFrame_MySql" />
-      <module name="Project02_01_Scala" />
+    <configuration name="AnalyserLogDataRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.hadoop.etl.test.mr_test2.AnalyserLogDataRunner" />
+      <module name="Project01_03_Electricity_Log" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package07.sparksql.*" />
+          <option name="PATTERN" value="package02.hadoop.etl.test.mr_test2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomLog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package01.log.RandomLog" />
+      <module name="Project01_03_Electricity_Log" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package01.log.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -201,21 +252,33 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestDataFrame_MySql" />
-      <item itemvalue="Application.TestDataFrame_Hive" />
-      <item itemvalue="Application.Hdfs" />
-      <item itemvalue="Application.HBaseStudy" />
+      <item itemvalue="Application.RandomLog" />
+      <item itemvalue="Application.AnalyserLogDataRunner" />
       <item itemvalue="Application.WordCount" />
+      <item itemvalue="Application.AnalyserLogDataRunner (1)" />
+      <item itemvalue="Application.AnalyserLogDataRunner (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnalyserLogDataRunner" />
+        <item itemvalue="Application.RandomLog" />
+        <item itemvalue="Application.AnalyserLogDataRunner (2)" />
+        <item itemvalue="Application.AnalyserLogDataRunner (1)" />
         <item itemvalue="Application.WordCount" />
-        <item itemvalue="Application.HBaseStudy" />
-        <item itemvalue="Application.Hdfs" />
-        <item itemvalue="Application.TestDataFrame_Hive" />
-        <item itemvalue="Application.TestDataFrame_MySql" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -244,7 +307,12 @@
       <workItem from="1576415278682" duration="741000" />
       <workItem from="1576417813384" duration="712000" />
       <workItem from="1576418878584" duration="119000" />
-      <workItem from="1576419001476" duration="780000" />
+      <workItem from="1576419001476" duration="1202000" />
+      <workItem from="1576484695230" duration="1865000" />
+      <workItem from="1576487075385" duration="17949000" />
+      <workItem from="1576769964154" duration="7047000" />
+      <workItem from="1576829077164" duration="10650000" />
+      <workItem from="1576900851734" duration="3207000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1574314150826</created>
@@ -330,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576419541634</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="添加依赖">
+      <created>1576419806444</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576419806444</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,9 +437,104 @@
     <MESSAGE value="完成SparkSql测试" />
     <MESSAGE value="环境配置修改" />
     <MESSAGE value="创建练习项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建练习项目" />
+    <MESSAGE value="添加依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加依赖" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HadoopSpark$Test1.coverage" NAME="Test1 Coverage Results" MODIFIED="1575074337913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project03_01_Spark_Python/com/spark" />
+  <component name="WindowStateProjectService">
+    <state x="440" y="189" key="#Inspections" timestamp="1576670356555">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="440" y="189" key="#Inspections/0.23.1680.1001@0.23.1680.1001" timestamp="1576670356555" />
+    <state x="440" y="189" key="#Notifications" timestamp="1576487101040">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="440" y="189" key="#Notifications/0.23.1680.1001@0.23.1680.1001" timestamp="1576487101040" />
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1576824708527">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1576824708527" />
+    <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576841457650">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1576841457650" />
+    <state x="528" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576769986082">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="528" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1576769986082" />
+    <state x="255" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576940647522">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="255" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1576940647522" />
+    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1576940622813">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1576940622813" />
+    <state width="457" height="466" key="DebuggerActiveHint" timestamp="1576825769077">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state width="457" height="466" key="DebuggerActiveHint/0.23.1680.1001@0.23.1680.1001" timestamp="1576825769077" />
+    <state x="640" y="342" key="FileChooserDialogImpl" timestamp="1576487176211">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="640" y="342" key="FileChooserDialogImpl/0.23.1680.1001@0.23.1680.1001" timestamp="1576487176211" />
+    <state width="1638" height="429" key="GridCell.Tab.0.bottom" timestamp="1576940389047">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state width="1638" height="429" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1576940389047" />
+    <state width="1638" height="429" key="GridCell.Tab.0.center" timestamp="1576940389046">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state width="1638" height="429" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1576940389046" />
+    <state width="1638" height="429" key="GridCell.Tab.0.left" timestamp="1576940389045">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state width="1638" height="429" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1576940389045" />
+    <state width="1638" height="429" key="GridCell.Tab.0.right" timestamp="1576940389046">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state width="1638" height="429" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1576940389046" />
+    <state width="1638" height="296" key="GridCell.Tab.1.bottom" timestamp="1576899295545">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state width="1638" height="296" key="GridCell.Tab.1.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1576899295545" />
+    <state width="1638" height="296" key="GridCell.Tab.1.center" timestamp="1576899295545">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state width="1638" height="296" key="GridCell.Tab.1.center/0.23.1680.1001@0.23.1680.1001" timestamp="1576899295545" />
+    <state width="1638" height="296" key="GridCell.Tab.1.left" timestamp="1576899295545">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state width="1638" height="296" key="GridCell.Tab.1.left/0.23.1680.1001@0.23.1680.1001" timestamp="1576899295545" />
+    <state width="1638" height="296" key="GridCell.Tab.1.right" timestamp="1576899295545">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state width="1638" height="296" key="GridCell.Tab.1.right/0.23.1680.1001@0.23.1680.1001" timestamp="1576899295545" />
+    <state x="341" y="162" key="SettingsEditor" timestamp="1576858928034">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="341" y="162" key="SettingsEditor/0.23.1680.1001@0.23.1680.1001" timestamp="1576858928034" />
+    <state width="547" height="445" key="SwitcherDM" timestamp="1576666986500">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state width="547" height="445" key="SwitcherDM/0.23.1680.1001@0.23.1680.1001" timestamp="1576666986500" />
+    <state x="100" y="123" width="1480" height="801" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576940311792">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="100" y="123" width="1480" height="801" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1576940311792" />
+    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1576825082841">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1576825082841" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/test/mr_test2/AnalyserLogDataRunner.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

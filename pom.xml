@@ -39,6 +39,7 @@
         <mysql-connector.version>5.1.48</mysql-connector.version>
         <fastjson.version>1.2.62</fastjson.version>
         <fastutil.version>8.3.0</fastutil.version>
+        <uasparser.version>0.6.2</uasparser.version>
     </properties>
 
     <repositories>

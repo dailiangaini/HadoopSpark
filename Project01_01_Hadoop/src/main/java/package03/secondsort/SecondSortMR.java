@@ -21,7 +21,7 @@ public class SecondSortMR extends Configured implements Tool {
     Configuration configuration;
     @Override
     public void setConf(Configuration conf) {
-        System.setProperty("hadoop.home.dir", "/Users/dailiang/Documents/Software/hadoop-2.10.0");
+        System.setProperty("hadoop.home.dir", "/opt/hadoop-2.7.7");
         configuration = new Configuration();
         configuration.set("mapreduce.framework.name", "local");
         configuration.set("fs.defaultFS","hdfs://localhost:9000");
@@ -35,14 +35,13 @@ public class SecondSortMR extends Configured implements Tool {
 
     @Override
     public int run(String[] strings) throws Exception {
-        System.setProperty("hadoop.home.dir", "/Users/dailiang/Documents/Software/hadoop-2.10.0");
+        System.setProperty("hadoop.home.dir", "/opt/hadoop-2.7.7");
         String inputFile = "/Users/dailiang/Documents/second";
         String outputDir = "/Users/dailiang/Documents/secondOut";
 
         Configuration configuration = getConf(); //获得配置文件对象
         Job job=Job.getInstance(configuration,"SecondSortMR");
         job.setJarByClass(SecondSortMR.class);
-
         FileSystem fs = FileSystem.get(configuration);
         //3.设置input output
         FileInputFormat.addInputPath(job, new Path(inputFile));

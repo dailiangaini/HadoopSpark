@@ -83,7 +83,7 @@ public class WordCount {
 
 
         // 设置本地运行
-//        conf.set("mapreduce.framework.name", "local");
+        conf.set("mapreduce.framework.name", "local");
         // 本地文件系统
         conf.set("fs.defaultFS", "file:///");
 
