@@ -5,6 +5,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
 import org.apache.hadoop.io.NullWritable;
@@ -46,12 +47,16 @@ public class AnalyserLogDataRunner implements Tool {
 //        this.conf = HBaseConfiguration.create(conf);
 //        conf.set("hbase.zookeeper.quorum", "localhost");
 //        conf.set("hbase.zookeeper.property.clientPort", "2181");
-        this.conf = conf;
+        //this.conf = conf;
         // 设置本地运行
           conf.set("mapreduce.framework.name", "local");
         conf.set("fs.defaultFS", "hdfs://localhost:9000");
         // 本地文件系统
         // conf.set("fs.defaultFS", "file:///");
+
+//        conf.set("hbase.zookeeper.quorum", "localhost");
+//        conf.set("hbase.zookeeper.property.clientPort", "2181");
+        this.conf = HBaseConfiguration.create(conf);
     }
 
     @Override
