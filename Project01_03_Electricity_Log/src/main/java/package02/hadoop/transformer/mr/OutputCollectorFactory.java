@@ -1,6 +1,8 @@
 package package02.hadoop.transformer.mr;
 
 import package02.hadoop.common.KpiType;
+import package02.hadoop.transformer.mr.activeuser.ActiveUserBrowserCollector;
+import package02.hadoop.transformer.mr.activeuser.ActiveUserCollector;
 import package02.hadoop.transformer.mr.newuser.StatsBrowserUserNewInstallUserCollector;
 import package02.hadoop.transformer.mr.newuser.StatsUserNewInstallUserCollector;
 
@@ -10,10 +12,12 @@ import package02.hadoop.transformer.mr.newuser.StatsUserNewInstallUserCollector;
  * @Date: 2019/12/25 00:33
  */
 public class OutputCollectorFactory {
-    private IOutputCollector newUserOutputCollector;
-    private IOutputCollector browserNewUserOutputCollector;
+    private static IOutputCollector newUserOutputCollector;
+    private static IOutputCollector browserNewUserOutputCollector;
+    private static IOutputCollector activeUserOutputCollector;
+    private static IOutputCollector browserActiveUserOutputCollector;
 
-    public IOutputCollector getOutputCollector(KpiType kpiType){
+    public static IOutputCollector getOutputCollector(KpiType kpiType){
         switch (kpiType){
             // 新用户
             case NEW_INSTALL_USER:{
@@ -28,6 +32,18 @@ public class OutputCollectorFactory {
                     browserNewUserOutputCollector = new StatsBrowserUserNewInstallUserCollector();
                 }
                 return browserNewUserOutputCollector;
+            }
+            case ACTIVE_USER:{
+                if(null == activeUserOutputCollector){
+                    activeUserOutputCollector = new ActiveUserCollector();
+                }
+                return activeUserOutputCollector;
+            }
+            case BROWSER_ACTIVE_USER:{
+                if(null == browserActiveUserOutputCollector){
+                    browserActiveUserOutputCollector = new ActiveUserBrowserCollector();
+                }
+                return browserActiveUserOutputCollector;
             }
             default: {
                 return null;

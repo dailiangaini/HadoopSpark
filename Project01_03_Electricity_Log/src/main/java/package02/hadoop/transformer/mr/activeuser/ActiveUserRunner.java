@@ -1,4 +1,4 @@
-package package02.hadoop.transformer.mr.newuser;
+package package02.hadoop.transformer.mr.activeuser;
 
 import com.google.common.collect.Lists;
 import org.apache.commons.lang.StringUtils;
@@ -18,6 +18,9 @@ import package02.hadoop.transformer.model.dim.StatsUserDimension;
 import package02.hadoop.transformer.model.value.map.TimeOutputValue;
 import package02.hadoop.transformer.model.value.reduce.MapWritableValue;
 import package02.hadoop.transformer.mr.TransformerOutputFormat;
+import package02.hadoop.transformer.mr.newuser.NewInstallUserMapper;
+import package02.hadoop.transformer.mr.newuser.NewInstallUserReducer;
+import package02.hadoop.transformer.mr.newuser.NewInstallUserRunner;
 import package02.hadoop.util.TimeUtil;
 
 import java.util.List;
@@ -25,12 +28,12 @@ import java.util.List;
 /**
  * @Author: D&L
  * @Description:
- * @Date: 2019/12/24 14:33
+ * @Date: 2019/12/25 20:02
  */
-public class NewInstallUserRunner implements Tool {
-    private static final Logger logger = Logger.getLogger(NewInstallUserRunner.class);
-    private Configuration conf = null;
+public class ActiveUserRunner implements Tool {
 
+    private static final Logger logger = Logger.getLogger(ActiveUserRunner.class);
+    private Configuration conf = null;
     @Override
     public void setConf(Configuration conf) {
         // 添加自定义的配置文件
@@ -78,18 +81,18 @@ public class NewInstallUserRunner implements Tool {
         Configuration conf = this.getConf();
         this.processArgs(conf,args);
 
-        Job job = Job.getInstance(conf,"new_install_user");
-        job.setJarByClass(NewInstallUserRunner.class);
+        Job job = Job.getInstance(conf,"active_user");
+        job.setJarByClass(ActiveUserRunner.class);
 
         TableMapReduceUtil.initTableMapperJob(
                 initScans(job),
-                NewInstallUserMapper.class,
+                ActiveUserMapper.class,
                 StatsUserDimension.class,
                 TimeOutputValue.class,
                 job,
                 false);
 
-        job.setReducerClass(NewInstallUserReducer.class);
+        job.setReducerClass(ActiveUserReducer.class);
 
         job.setOutputKeyClass(StatsUserDimension.class);
         job.setOutputValueClass(MapWritableValue.class);
@@ -98,7 +101,6 @@ public class NewInstallUserRunner implements Tool {
 
         return job.waitForCompletion(true) ? 0 : -1;
     }
-
     protected List<Scan> initScans(Job job) {
         Scan scan = new Scan();
         String date = job.getConfiguration().get(GlobalConstants.RUNNING_DATE_PARAMES);
@@ -111,32 +113,38 @@ public class NewInstallUserRunner implements Tool {
         scan.withStartRow(startRow.getBytes());
         scan.withStopRow(stopRow.getBytes());
 
-        // 获取时间值为e_l的数据
+        // 获取时间值为pv的数据
         FilterList filterList = new FilterList(FilterList.Operator.MUST_PASS_ALL);
-        // 过滤数据，只分析launch事件
+        // 过滤数据，只分析page view event事件
         SingleColumnValueFilter singleColumnValueFilter = new SingleColumnValueFilter(EventLogConstants.EVENT_LOGS_FAMILY_NAME.getBytes(),
                 Bytes.toBytes(EventLogConstants.LOG_COLUMN_NAME_EVENT_NAME), CompareFilter.CompareOp.EQUAL,
-                Bytes.toBytes(EventLogConstants.EventEnum.LAUNCH.alias));
-         filterList.addFilter(singleColumnValueFilter);
+                Bytes.toBytes(EventLogConstants.EventEnum.PAGEVIEW.alias));
+        //filterList.addFilter(singleColumnValueFilter);
 
         // 定义mapper中需要获取的列名
         String[] columns = new String[] {
+                // 事件名称
                 EventLogConstants.LOG_COLUMN_NAME_EVENT_NAME,
+                // 用户id
                 EventLogConstants.LOG_COLUMN_NAME_UUID,
+                // 服务器时间
                 EventLogConstants.LOG_COLUMN_NAME_SERVER_TIME,
+                // 平台名称
                 EventLogConstants.LOG_COLUMN_NAME_PLATFORM,
+                // 浏览器名称
                 EventLogConstants.LOG_COLUMN_NAME_BROWSER_NAME,
+                // 浏览器版本号
                 EventLogConstants.LOG_COLUMN_NAME_BROWSER_VERSION };
         filterList.addFilter(getColumnFilter(columns));
 
         scan.setAttribute(Scan.SCAN_ATTRIBUTES_TABLE_NAME, Bytes.toBytes(EventLogConstants.HBASE_NAME_EVENT_LOGS));
         scan.setFilter(filterList);
         // 优化设置cache
-         //scan.setBatch(500);
+        //scan.setBatch(500);
         // 启动cache blocks
-         //scan.setCacheBlocks(true);
+        //scan.setCacheBlocks(true);
         // 设置每次返回的行数，默认值100，设置较大的值可以提高速度(减少rpc操作)，但是较大的值可能会导致内存异常。
-         //scan.setCaching(1000);
+        //scan.setCaching(1000);
         return Lists.newArrayList(scan);
     }
     protected Filter getColumnFilter(String[] columns) {
@@ -149,8 +157,7 @@ public class NewInstallUserRunner implements Tool {
     }
 
     public static void main(String[] args) throws Exception {
-        ToolRunner.run(new Configuration(), new NewInstallUserRunner(), args);
+        ToolRunner.run(new Configuration(), new ActiveUserRunner(), args);
     }
-
 
 }

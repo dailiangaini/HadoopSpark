@@ -87,7 +87,12 @@ public class TransformerOutputFormat extends OutputFormat<BaseDimension, BaseSta
                 int count = 1;
                 if (map.get(kpi) == null) {
                     // 使用kpi进行区分，返回sql保存到config中
-                    pstmt = this.conn.prepareStatement(conf.get(kpi.name));
+                    String sql = conf.get(kpi.name);
+                    /**
+                     * 采用自定义的方法获取sql
+                     * String sql = QueryMapping.getSql(kpi);
+                     */
+                    pstmt = this.conn.prepareStatement(sql);
                     map.put(kpi, pstmt);
                 } else {
                     pstmt = map.get(kpi);
@@ -99,6 +104,13 @@ public class TransformerOutputFormat extends OutputFormat<BaseDimension, BaseSta
                 String collectorName = conf.get(GlobalConstants.OUTPUT_COLLECTOR_KEY_PREFIX + kpi.name);
                 Class<?> clazz = Class.forName(collectorName);
                 IOutputCollector collector = (IOutputCollector) clazz.newInstance();
+
+                /**
+                 * 采用自定义的方法获取IOutputCollector
+                 * String sql = QueryMapping.getSql(kpi);
+                 * IOutputCollector collector = OutputCollectorFactory.getOutputCollector(kpi);
+                 */
+
                 collector.collect(conf, key, value, pstmt, converter);
 
                 if (count % Integer.valueOf(conf.get(GlobalConstants.JDBC_BATCH_NUMBER, GlobalConstants.DEFAULT_JDBC_BATCH_NUMBER)) == 0) {

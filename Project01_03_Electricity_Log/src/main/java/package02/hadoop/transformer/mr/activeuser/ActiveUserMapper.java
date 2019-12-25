@@ -1,4 +1,4 @@
-package package02.hadoop.transformer.mr.newuser;
+package package02.hadoop.transformer.mr.activeuser;
 
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.io.ImmutableBytesWritable;
@@ -22,42 +22,20 @@ import java.util.List;
 /**
  * @Author: D&L
  * @Description:
- * @Date: 2019/12/24 14:31
+ * @Date: 2019/12/25 20:02
  */
-public class NewInstallUserMapper extends TableMapper<StatsUserDimension, TimeOutputValue> {
-    private static final Logger logger = Logger.getLogger(NewInstallUserMapper.class);
-    /**
-     * map 端输出的value对象
-     */
-    TimeOutputValue timeOutputValue = new TimeOutputValue();
-    /**
-     * map 输出的key的对象
-     */
+public class ActiveUserMapper extends TableMapper<StatsUserDimension, TimeOutputValue> {
+    private static final Logger logger = Logger.getLogger(ActiveUserMapper.class);
+
     StatsUserDimension statsUserDimension = new StatsUserDimension();
-    /**
-     * 列族
-     */
-    byte[] family = Bytes.toBytes(EventLogConstants.EVENT_LOGS_FAMILY_NAME);
+    TimeOutputValue timeOutputValue = new TimeOutputValue();
+    byte[] family = EventLogConstants.EVENT_LOGS_FAMILY_NAME.getBytes();
 
     /**
-     * 定义模块纬度
+     * kpi信息
      */
-    KpiDimension newInstallUser = new KpiDimension(KpiType.NEW_INSTALL_USER.name);
-    KpiDimension newInstallUserOfBrowser = new KpiDimension(KpiType.BROWSER_NEW_INSTALL_USER.name);
-
-    /**
-     * 输入记录数
-     */
-    protected int inputRecords = 0;
-    /**
-     * 过滤的记录数, 要求输入的记录没有进行任何输出
-     */
-    protected int filterRecords = 0;
-    /**
-     * 输出的记录条数
-     */
-    protected int outputRecords = 0;
-
+    KpiDimension activeUserKpi = new KpiDimension(KpiType.ACTIVE_USER.name);
+    KpiDimension activeUserOfBrowserKpi = new KpiDimension(KpiType.BROWSER_ACTIVE_USER.name);
 
     @Override
     protected void map(ImmutableBytesWritable key, Result value, Context context) throws IOException, InterruptedException {
@@ -66,15 +44,14 @@ public class NewInstallUserMapper extends TableMapper<StatsUserDimension, TimeOu
         stringBuffer.append("map:").append("{key:").append(key.toString()).append("}")
                 .append("{value:").append(value.toString()).append("}");
         logger.error(stringBuffer.toString());
-
         /**
          * 获取数据，时间， 浏览器信息，uuid，平台
          */
+        String uuId = Bytes.toString(value.getValue(family, Bytes.toBytes(EventLogConstants.LOG_COLUMN_NAME_UUID)));
         String time = Bytes.toString(value.getValue(family, Bytes.toBytes(EventLogConstants.LOG_COLUMN_NAME_SERVER_TIME)));
         String browserName = Bytes.toString(value.getValue(family, Bytes.toBytes(EventLogConstants.LOG_COLUMN_NAME_BROWSER_NAME)));
         String browserVersion = Bytes.toString(value.getValue(family, Bytes.toBytes(EventLogConstants.LOG_COLUMN_NAME_BROWSER_VERSION)));
         String platform = Bytes.toString(value.getValue(family, Bytes.toBytes(EventLogConstants.LOG_COLUMN_NAME_PLATFORM)));
-        String uuId = Bytes.toString(value.getValue(family, Bytes.toBytes(EventLogConstants.LOG_COLUMN_NAME_UUID)));
 
         // 构建时间维度
         long timeOfLong = Long.parseLong(time);
@@ -97,25 +74,20 @@ public class NewInstallUserMapper extends TableMapper<StatsUserDimension, TimeOu
         StatsCommonDimension statsCommonDimension = statsUserDimension.getStatsCommon();
         statsCommonDimension.setDate(dateDimension);
 
+        //平台维度和浏览器维度
+        // 用户基本信息模块
         for (PlatformDimension platformDimension : platformDimensions) {
-            /**
-             * 默认的平台
-             */
-            // 1. 设置为一个默认值
-            statsUserDimension.setBrowser(defaultBrowser);
-            statsCommonDimension.setKpi(newInstallUser);
             statsCommonDimension.setPlatform(platformDimension);
+            statsCommonDimension.setKpi(activeUserKpi);
+            statsUserDimension.setBrowser(defaultBrowser);
             context.write(statsUserDimension, timeOutputValue);
-            this.outputRecords++;
-
             /**
              * 遍历设置所有的平台信息
              */
             for (BrowserDimension browserDimension : browserDimensions) {
-                statsCommonDimension.setKpi(newInstallUserOfBrowser);
+                statsCommonDimension.setKpi(activeUserOfBrowserKpi);
                 statsUserDimension.setBrowser(browserDimension);
                 context.write(statsUserDimension, timeOutputValue);
-                this.outputRecords++;
             }
         }
 
