@@ -7,10 +7,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/hbase-env.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/hbase-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/StatsCommonDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/StatsDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/StatsInboundBounceDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/StatsInboundDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/StatsLocationDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/StatsUserDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/base/BaseDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/base/BrowserDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/base/DateDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/base/InboundDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/base/KpiDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/base/LocationDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/base/PlatformDimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/value/BaseStatsValueWritable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/value/map/TextsOutputValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/value/map/TimeOutputValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/value/reduce/InboundBounceReduceValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/value/reduce/InboundReduceValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/value/reduce/LocationReducerOutputValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/value/reduce/MapWritableValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/IOutputCollector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/OutputCollectorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/QueryMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/TransformerBaseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/TransformerBaseRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/TransformerOutputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/StatsBrowserUserNewInstallUserCollector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/StatsUserNewInstallUserCollector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/service/IDimensionConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/service/impl/DimensionConverterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/service/impl/InboundDimensionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package01/log/RandomLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package01/log/RandomLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr/AnalyserLogDataRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr/AnalyserLogDataRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/util/MemberUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/util/MemberUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/util/TimeChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/util/TimeChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/util/UrlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/util/UrlUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/output-collector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/output-collector.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +101,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/mr" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -79,24 +117,24 @@
       <recent name="package02.tq.map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/mr" />
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform" />
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/model" />
       <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources" />
       <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr" />
-      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr_test2" />
-      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr_test" />
-      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="package02.hadoop.transformer.mr.newuser" />
       <recent name="package02.hadoop.etl.mr" />
       <recent name="package02" />
       <recent name="package07.sparksql" />
       <recent name="package06.actions" />
-      <recent name="package03.scalaTest2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AnalyserLogDataRunner">
+  <component name="RunManager" selected="Application.NewInstallUserRunner">
     <configuration name="AnalyserLogDataRunner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="package02.hadoop.etl.mr_test.AnalyserLogDataRunner" />
       <module name="Project01_03_Electricity_Log" />
@@ -104,20 +142,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="package02.hadoop.etl.mr_test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnalyserLogDataRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package02.hadoop.etl.test.mr_test.AnalyserLogDataRunner" />
-      <module name="Project01_03_Electricity_Log" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package02.hadoop.etl.test.mr_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,13 +163,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnalyserLogDataRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package02.hadoop.etl.test.mr_test2.AnalyserLogDataRunner" />
+    <configuration name="NewInstallUserRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.hadoop.transformer.mr.newuser.NewInstallUserRunner" />
       <module name="Project01_03_Electricity_Log" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PROGRAM_PARAMETERS" value="-d 2019-12-25" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package02.hadoop.etl.test.mr_test2.*" />
+          <option name="PATTERN" value="package02.hadoop.etl.test.mr_test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -207,15 +231,13 @@
       <item itemvalue="Application.RandomLog" />
       <item itemvalue="Application.AnalyserLogDataRunner" />
       <item itemvalue="Application.WordCount" />
-      <item itemvalue="Application.AnalyserLogDataRunner (1)" />
-      <item itemvalue="Application.AnalyserLogDataRunner (2)" />
+      <item itemvalue="Application.NewInstallUserRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NewInstallUserRunner" />
         <item itemvalue="Application.AnalyserLogDataRunner" />
         <item itemvalue="Application.RandomLog" />
-        <item itemvalue="Application.AnalyserLogDataRunner (2)" />
-        <item itemvalue="Application.AnalyserLogDataRunner (1)" />
         <item itemvalue="Application.WordCount" />
       </list>
     </recent_temporary>
@@ -264,7 +286,7 @@
       <workItem from="1576487075385" duration="17949000" />
       <workItem from="1576769964154" duration="7047000" />
       <workItem from="1576829077164" duration="10650000" />
-      <workItem from="1576900851734" duration="6012000" />
+      <workItem from="1576900851734" duration="33985000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1574314150826</created>
@@ -364,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576940688839</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="修改etl">
+      <created>1577076379138</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1577076379138</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,25 +427,30 @@
     <MESSAGE value="创建练习项目" />
     <MESSAGE value="添加依赖" />
     <MESSAGE value="完成数据的etl" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成数据的etl" />
+    <MESSAGE value="修改etl" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改etl" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="189" key="#Inspections" timestamp="1576670356555">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="440" y="189" key="#Inspections/0.23.1680.1001@0.23.1680.1001" timestamp="1576670356555" />
-    <state x="440" y="189" key="#Notifications" timestamp="1576487101040">
+    <state x="440" y="189" key="#Notifications" timestamp="1577261995133">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="440" y="189" key="#Notifications/0.23.1680.1001@0.23.1680.1001" timestamp="1576487101040" />
-    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1576824708527">
+    <state x="440" y="189" key="#Notifications/0.23.1680.1001@0.23.1680.1001" timestamp="1577261995133" />
+    <state x="304" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577259791197">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1576824708527" />
-    <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576841457650">
+    <state x="304" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577259791197" />
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1577205486279">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1576841457650" />
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1577205486279" />
+    <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1577252202638">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577252202638" />
     <state x="528" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576769986082">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -425,70 +459,74 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="255" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1576940647522" />
-    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1576940688106">
+    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1577076378879">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1576940688106" />
-    <state width="481" height="533" key="DebuggerActiveHint" timestamp="1577075131814">
+    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1577076378879" />
+    <state width="525" height="533" key="DebuggerActiveHint" timestamp="1577258561660">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="481" height="533" key="DebuggerActiveHint/0.23.1680.1001@0.23.1680.1001" timestamp="1577075131814" />
+    <state width="525" height="533" key="DebuggerActiveHint/0.23.1680.1001@0.23.1680.1001" timestamp="1577258561660" />
     <state x="640" y="342" key="FileChooserDialogImpl" timestamp="1576487176211">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="640" y="342" key="FileChooserDialogImpl/0.23.1680.1001@0.23.1680.1001" timestamp="1576487176211" />
-    <state width="1638" height="345" key="GridCell.Tab.0.bottom" timestamp="1577075952653">
+    <state width="1638" height="365" key="GridCell.Tab.0.bottom" timestamp="1577259856745">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577075952653" />
-    <state width="1638" height="345" key="GridCell.Tab.0.center" timestamp="1577075952652">
+    <state width="1638" height="365" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577259856745" />
+    <state width="1638" height="365" key="GridCell.Tab.0.center" timestamp="1577259856744">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577075952652" />
-    <state width="1638" height="345" key="GridCell.Tab.0.left" timestamp="1577075952652">
+    <state width="1638" height="365" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577259856744" />
+    <state width="1638" height="365" key="GridCell.Tab.0.left" timestamp="1577259856743">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577075952652" />
-    <state width="1638" height="345" key="GridCell.Tab.0.right" timestamp="1577075952653">
+    <state width="1638" height="365" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577259856743" />
+    <state width="1638" height="365" key="GridCell.Tab.0.right" timestamp="1577259856744">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="345" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577075952653" />
-    <state width="1638" height="296" key="GridCell.Tab.1.bottom" timestamp="1577075237667">
+    <state width="1638" height="365" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577259856744" />
+    <state width="1638" height="368" key="GridCell.Tab.1.bottom" timestamp="1577258941737">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="296" key="GridCell.Tab.1.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577075237667" />
-    <state width="1638" height="296" key="GridCell.Tab.1.center" timestamp="1577075237666">
+    <state width="1638" height="368" key="GridCell.Tab.1.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577258941737" />
+    <state width="1638" height="368" key="GridCell.Tab.1.center" timestamp="1577258941736">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="296" key="GridCell.Tab.1.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577075237666" />
-    <state width="1638" height="296" key="GridCell.Tab.1.left" timestamp="1577075237666">
+    <state width="1638" height="368" key="GridCell.Tab.1.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577258941736" />
+    <state width="1638" height="368" key="GridCell.Tab.1.left" timestamp="1577258941736">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="296" key="GridCell.Tab.1.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577075237666" />
-    <state width="1638" height="296" key="GridCell.Tab.1.right" timestamp="1577075237667">
+    <state width="1638" height="368" key="GridCell.Tab.1.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577258941736" />
+    <state width="1638" height="368" key="GridCell.Tab.1.right" timestamp="1577258941737">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="296" key="GridCell.Tab.1.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577075237667" />
-    <state x="341" y="162" key="SettingsEditor" timestamp="1576858928034">
+    <state width="1638" height="368" key="GridCell.Tab.1.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577258941737" />
+    <state x="341" y="162" key="SettingsEditor" timestamp="1577259785034">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="341" y="162" key="SettingsEditor/0.23.1680.1001@0.23.1680.1001" timestamp="1576858928034" />
+    <state x="341" y="162" key="SettingsEditor/0.23.1680.1001@0.23.1680.1001" timestamp="1577259785034" />
     <state width="547" height="445" key="SwitcherDM" timestamp="1576666986500">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state width="547" height="445" key="SwitcherDM/0.23.1680.1001@0.23.1680.1001" timestamp="1576666986500" />
-    <state x="440" y="263" key="Vcs.Push.Dialog.v2" timestamp="1576940704174">
+    <state x="440" y="263" key="Vcs.Push.Dialog.v2" timestamp="1577076381627">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="440" y="263" key="Vcs.Push.Dialog.v2/0.23.1680.1001@0.23.1680.1001" timestamp="1576940704174" />
+    <state x="440" y="263" key="Vcs.Push.Dialog.v2/0.23.1680.1001@0.23.1680.1001" timestamp="1577076381627" />
     <state x="100" y="123" width="1480" height="801" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576940311792">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="100" y="123" width="1480" height="801" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1576940311792" />
-    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1576825082841">
+    <state x="498" y="285" width="724" height="476" key="find.popup" timestamp="1577252658514">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1576825082841" />
+    <state x="498" y="285" width="724" height="476" key="find.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577252658514" />
+    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1577169722691">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577169722691" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -502,6 +540,86 @@
           <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr/AnalyserLogDataRunner.java</url>
           <line>69</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/TransformerOutputFormat.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserMapper.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserReducer.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserMapper.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserMapper.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserMapper.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/TransformerOutputFormat.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/TransformerOutputFormat.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/TransformerOutputFormat.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserRunner.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr/AnalyserLogDataMapper.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr/AnalyserLogDataMapper.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr/AnalyserLogDataMapper.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr/AnalyserLogDataMapper.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/model/dim/base/KpiDimension.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserRunner.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

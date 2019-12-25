@@ -1,4 +1,4 @@
-package package02.hadoop.tarnsform.util;
+package package02.hadoop.transformer.util;
 
 import java.net.MalformedURLException;
 import java.net.URL;

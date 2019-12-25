@@ -49,7 +49,7 @@ public class AnalyserLogDataRunner implements Tool {
 //        conf.set("hbase.zookeeper.property.clientPort", "2181");
         //this.conf = conf;
         // 设置本地运行
-          conf.set("mapreduce.framework.name", "local");
+        conf.set("mapreduce.framework.name", "local");
         conf.set("fs.defaultFS", "hdfs://localhost:9000");
         // 本地文件系统
         // conf.set("fs.defaultFS", "file:///");
@@ -71,7 +71,7 @@ public class AnalyserLogDataRunner implements Tool {
         System.out.println("processArgs");
         this.processArgs(configuration, args);
         System.out.println("Job.getInstance");
-        Job job = Job.getInstance(conf, "analyser_logdata22");
+        Job job = Job.getInstance(conf, "analyser_logdata");
         // 设置本地提交job，集群运行，需要代码
         // File jarFile = EJob.createTempJar("target/classes");
         // ((JobConf) job.getConfiguration()).setJar(jarFile.toString());

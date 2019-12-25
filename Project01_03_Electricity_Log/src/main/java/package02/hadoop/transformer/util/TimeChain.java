@@ -1,4 +1,4 @@
-package package02.hadoop.tarnsform.util;
+package package02.hadoop.transformer.util;
 
 /**
  * 用于计算会话长度的类,用于计算一段时间节点之间的长度

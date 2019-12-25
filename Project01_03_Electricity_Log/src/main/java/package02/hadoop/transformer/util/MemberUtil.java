@@ -1,4 +1,4 @@
-package package02.hadoop.tarnsform.util;
+package package02.hadoop.transformer.util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

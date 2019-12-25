@@ -11,7 +11,7 @@ import java.util.Random;
 import java.util.UUID;
 
 public class RandomLog {
-	public static String day = "20160610";
+	public static String day = "20191225";
 	public static String pre_url = "http%3A%2F%2Flocalhost%3A8080%2FBIG_DATA_LOG2%2Fdemo";
 	static String[] enArr = { "e_l", "e_pv" };
 	static List<String> uids = new ArrayList<String>();
@@ -105,7 +105,7 @@ public class RandomLog {
 		try {
 			writer = new FileWriter("/tmp/data/my_access.log", true);
 
-			for (int j = 0; j < 50000; j++) {
+			for (int j = 0; j < 500; j++) {
 				String[] d = getDatetime(day);
 				StringBuilder str = new StringBuilder();
 				int i1 = r.nextInt(255);
