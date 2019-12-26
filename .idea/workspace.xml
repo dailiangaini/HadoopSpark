@@ -7,16 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/activeuser/ActiveUserBrowserCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/activeuser/ActiveUserCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/activeuser/ActiveUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/activeuser/ActiveUserReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/activeuser/ActiveUserRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/1.电商日志项目-分析.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/1.电商日志项目.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/hive/DateDimensionUDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/hive/PlatformDimensionUDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/hive/vd/statsViewDepth.hql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/hive/vd/view_depth_run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/OutputCollectorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/OutputCollectorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/TransformerOutputFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/TransformerOutputFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project01_03_Electricity_Log/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/target/Project02_03_Traffic_Teach-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/target/Project02_03_Traffic_Teach-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/mr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -85,24 +84,24 @@
       <recent name="package02.tq.map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main" />
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/hive/vd" />
+      <recent name="$PROJECT_DIR$/out/artifacts/HadoopSpark_jar2" />
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/hive" />
       <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/mr" />
-      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform" />
-      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/tarnsform/model" />
-      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/etl/mr" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="package02.hadoop.transformer" />
       <recent name="package02.hadoop.transformer.mr.newuser" />
       <recent name="package02.hadoop.etl.mr" />
       <recent name="package02" />
       <recent name="package07.sparksql" />
-      <recent name="package06.actions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ActiveUserRunner">
+  <component name="RunManager" selected="Application.DateDimensionUDF">
     <configuration name="ActiveUserRunner" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -134,6 +133,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="package02.hadoop.etl.mr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateDimensionUDF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.hadoop.transformer.hive.DateDimensionUDF" />
+      <module name="Project01_03_Electricity_Log" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package02.hadoop.transformer.hive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,9 +224,11 @@
       <item itemvalue="Application.AnalyserLogDataRunner" />
       <item itemvalue="Application.WordCount" />
       <item itemvalue="Application.NewInstallUserRunner" />
+      <item itemvalue="Application.DateDimensionUDF" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DateDimensionUDF" />
         <item itemvalue="Application.NewInstallUserRunner" />
         <item itemvalue="Application.AnalyserLogDataRunner" />
         <item itemvalue="Application.RandomLog" />
@@ -265,7 +280,7 @@
       <workItem from="1576487075385" duration="17949000" />
       <workItem from="1576769964154" duration="7047000" />
       <workItem from="1576829077164" duration="10650000" />
-      <workItem from="1576900851734" duration="38315000" />
+      <workItem from="1576900851734" duration="53567000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1574314150826</created>
@@ -379,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577268415112</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="完成active user 分析">
+      <created>1577278626343</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1577278626343</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +437,8 @@
     <MESSAGE value="完成数据的etl" />
     <MESSAGE value="修改etl" />
     <MESSAGE value="完成new user 分析" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成new user 分析" />
+    <MESSAGE value="完成active user 分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成active user 分析" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="189" key="#Inspections" timestamp="1576670356555">
@@ -430,10 +453,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="304" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577278524945" />
-    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1577275373302">
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1577294015880">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1577275373302" />
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1577294015880" />
     <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1577277496245">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -446,10 +469,14 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="255" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1576940647522" />
-    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1577268414812">
+    <state x="591" y="342" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1577298930132">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1577268414812" />
+    <state x="591" y="342" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577298930132" />
+    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1577278625965">
+      <screen x="0" y="23" width="1680" height="1001" />
+    </state>
+    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1577278625965" />
     <state width="525" height="533" key="DebuggerActiveHint" timestamp="1577258561660">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -462,22 +489,22 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="640" y="342" key="FileChooserDialogImpl/0.23.1680.1001@0.23.1680.1001" timestamp="1576487176211" />
-    <state width="1638" height="324" key="GridCell.Tab.0.bottom" timestamp="1577278543799">
+    <state width="1638" height="285" key="GridCell.Tab.0.bottom" timestamp="1577300512382">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577278543799" />
-    <state width="1638" height="324" key="GridCell.Tab.0.center" timestamp="1577278543798">
+    <state width="1638" height="285" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577300512382" />
+    <state width="1638" height="285" key="GridCell.Tab.0.center" timestamp="1577300512381">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577278543798" />
-    <state width="1638" height="324" key="GridCell.Tab.0.left" timestamp="1577278543797">
+    <state width="1638" height="285" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577300512381" />
+    <state width="1638" height="285" key="GridCell.Tab.0.left" timestamp="1577300512381">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577278543797" />
-    <state width="1638" height="324" key="GridCell.Tab.0.right" timestamp="1577278543798">
+    <state width="1638" height="285" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577300512381" />
+    <state width="1638" height="285" key="GridCell.Tab.0.right" timestamp="1577300512382">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577278543798" />
+    <state width="1638" height="285" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577300512382" />
     <state width="1638" height="368" key="GridCell.Tab.1.bottom" timestamp="1577258941737">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -494,30 +521,30 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state width="1638" height="368" key="GridCell.Tab.1.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577258941737" />
-    <state x="341" y="162" key="SettingsEditor" timestamp="1577278514355">
+    <state x="341" y="162" key="SettingsEditor" timestamp="1577298934458">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="341" y="162" key="SettingsEditor/0.23.1680.1001@0.23.1680.1001" timestamp="1577278514355" />
-    <state width="547" height="445" key="SwitcherDM" timestamp="1576666986500">
+    <state x="341" y="162" key="SettingsEditor/0.23.1680.1001@0.23.1680.1001" timestamp="1577298934458" />
+    <state width="547" height="496" key="SwitcherDM" timestamp="1577292041139">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="547" height="445" key="SwitcherDM/0.23.1680.1001@0.23.1680.1001" timestamp="1576666986500" />
-    <state x="440" y="263" key="Vcs.Push.Dialog.v2" timestamp="1577268420419">
+    <state width="547" height="496" key="SwitcherDM/0.23.1680.1001@0.23.1680.1001" timestamp="1577292041139" />
+    <state x="440" y="263" key="Vcs.Push.Dialog.v2" timestamp="1577278629103">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="440" y="263" key="Vcs.Push.Dialog.v2/0.23.1680.1001@0.23.1680.1001" timestamp="1577268420419" />
+    <state x="440" y="263" key="Vcs.Push.Dialog.v2/0.23.1680.1001@0.23.1680.1001" timestamp="1577278629103" />
     <state x="100" y="123" width="1480" height="801" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576940311792">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="100" y="123" width="1480" height="801" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1576940311792" />
-    <state x="498" y="285" width="724" height="476" key="find.popup" timestamp="1577252658514">
+    <state x="498" y="285" width="837" height="540" key="find.popup" timestamp="1577299724328">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="498" y="285" width="724" height="476" key="find.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577252658514" />
-    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1577169722691">
+    <state x="498" y="285" width="837" height="540" key="find.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577299724328" />
+    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1577300370354">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577169722691" />
+    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577300370354" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
