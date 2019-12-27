@@ -27,6 +27,7 @@
         <kafka.version.prefix>2.12</kafka.version.prefix>
         <kafka.version>2.3.1</kafka.version>
 
+
         <flume.version>1.9.0</flume.version>
         <sqoop.version>1.4.7</sqoop.version>
         <elasticsearch.version>7.5.0</elasticsearch.version>
