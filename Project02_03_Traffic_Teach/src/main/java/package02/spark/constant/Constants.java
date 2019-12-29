@@ -32,6 +32,7 @@ public interface Constants {
 	 * Spark作业相关的常量
 	 */
 	String SPARK_APP_NAME_SESSION = "MonitorFlowAnalyze";
+	String SPARK_APP_NAME_DAMAGED_MONITOR = "DamagedMonitor";
 	String FIELD_CAMERA_COUNT = "cameraCount";
 	String FIELD_CAMERA_IDS = "cameraIds";
 	String FIELD_CAR_COUNT = "carCount";

@@ -6,25 +6,199 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="使用hive完成 用户访问深度 分析">
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package01/data/mockdata/MockData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package01/data/mockdata/MockRealTimeData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package01/data/producedata/Data2File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package01/data/producedata/Data2Hive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/conf/ConfigurationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/constant/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/jdbc/JDBCHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/util/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/util/NumberUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/util/ParamUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/util/SparkUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/util/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources/monitor_camera_info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources/monitor_flow_action" afterDir="false" />
+    <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="完成数据导入到hive中">
+      <change afterPath="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources/hive-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/java/package07/sparksql/TestDataFrame_Hive2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p1_damaged_monitor/Damaged_monitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p1_damaged_monitor/Spark_Hive_Test.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p1_damaged_monitor/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p1_damaged_monitor/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p1_damaged_monitor/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/skynet/MonitorAndCameraStateAccumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/skynet/SpeedSortKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources/hive-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/src/main/resources/hive-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/src/main/resources/hive-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_01_Scala/target/classes/hive-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_01_Scala/target/classes/hive-site.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/constant/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/target/Project02_03_Traffic_Teach-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/db.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/dbex.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/log/log.ctrl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/log/log1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/log/logmirror.ctrl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c10.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c101.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c111.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c121.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c130.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c141.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c150.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c161.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c171.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c180.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c191.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c1a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c1b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c1c0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c1d1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c1e0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c1f1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c20.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c200.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c211.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c221.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c230.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c241.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c251.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c260.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c271.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c281.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c290.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c2a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c2b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c2c1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c2d0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c2e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c2f0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c300.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c31.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c311.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c321.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c331.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c340.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c351.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c361.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c371.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c380.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c391.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c3a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c3b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c3c0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c3d1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c3e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c3f1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c400.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c41.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c411.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c421.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c430.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c441.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c451.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c461.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c470.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c481.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c490.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c4a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c4b0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c4c1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c4d1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c4e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c4f0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c501.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c51.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c510.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c521.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c530.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c541.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c550.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c561.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c570.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c581.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c590.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5b0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5c1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5d0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c5f0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c60.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c601.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c610.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c621.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c630.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c641.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c650.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c661.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c670.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c681.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c690.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6b0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6c1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6d0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c6f0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c701.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c71.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c711.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c721.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c731.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c741.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c751.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c761.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c771.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c781.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c791.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c7a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c7b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c7c1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c7d1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c7e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c7f1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c801.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c81.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c811.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c821.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c831.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c840.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c851.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c860.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c871.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c880.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c891.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c8a0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c8b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c8c1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c8d1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c8e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c8f1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c90.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c901.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c911.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c920.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c931.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c940.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c951.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c960.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c971.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c981.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c990.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c9a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c9b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c9c0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c9d1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c9e0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/c9f1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/ca01.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/ca1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/ca11.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/ca21.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/cb1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/cc0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/cd1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/ce1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/seg0/cf0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metastore_db/service.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +216,8 @@
       <list>
         <option value="package-info" />
         <option value="Package Object" />
-        <option value="Class" />
         <option value="Python Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -77,7 +251,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/skynet" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -88,21 +262,22 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources" />
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources/conf" />
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/skynet" />
       <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark" />
-      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/constant" />
-      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/conf" />
-      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package01/data/mockdata" />
+      <recent name="$PROJECT_DIR$/Project02_01_Scala/src/main/resources" />
+      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources" />
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="package02.spark.analyse.p1_damaged_monitor" />
+      <recent name="package07.sparksql" />
       <recent name="package02.hadoop.transformer" />
       <recent name="package02.hadoop.transformer.mr.newuser" />
       <recent name="package02.hadoop.etl.mr" />
-      <recent name="package02" />
-      <recent name="package07.sparksql" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="package03.secondsort" />
@@ -111,7 +286,7 @@
       <recent name="package02.tq.map" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Data2File">
+  <component name="RunManager" selected="Application.Damaged_monitor">
     <configuration name="ActiveUserRunner" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -122,27 +297,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnalyserLogDataRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package02.hadoop.etl.mr.AnalyserLogDataRunner" />
-      <module name="Project01_03_Electricity_Log" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package02.hadoop.etl.mr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Data2File" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package01.data.producedata.Data2File" />
+    <configuration name="Damaged_monitor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p1_damaged_monitor.Damaged_monitor" />
       <module name="Project02_03_Traffic_Teach" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package01.data.producedata.*" />
+          <option name="PATTERN" value="package02.spark.analyse.p1_damaged_monitor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,27 +311,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewInstallUserRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package02.hadoop.transformer.mr.newuser.NewInstallUserRunner" />
-      <module name="Project01_03_Electricity_Log" />
-      <option name="PROGRAM_PARAMETERS" value="-d 2019-12-25" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package02.hadoop.etl.test.mr_test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RandomLog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package01.log.RandomLog" />
-      <module name="Project01_03_Electricity_Log" />
+    <configuration name="Spark_Hive_Test" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p1_damaged_monitor.Spark_Hive_Test" />
+      <module name="Project02_03_Traffic_Teach" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package01.log.*" />
+          <option name="PATTERN" value="package02.spark.analyse.p1_damaged_monitor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,13 +325,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package01.wordcount.WordCount" />
-      <module name="Project01_01_Hadoop" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p1_damaged_monitor.Test" />
+      <module name="Project02_03_Traffic_Teach" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package01.wordcount.*" />
+          <option name="PATTERN" value="package02.spark.analyse.p1_damaged_monitor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p1_damaged_monitor.Test2" />
+      <module name="Project02_03_Traffic_Teach" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package02.spark.analyse.p1_damaged_monitor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p1_damaged_monitor.Test3" />
+      <module name="Project02_03_Traffic_Teach" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package02.spark.analyse.p1_damaged_monitor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -216,19 +391,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ActiveUserRunner" />
-      <item itemvalue="Application.RandomLog" />
-      <item itemvalue="Application.AnalyserLogDataRunner" />
-      <item itemvalue="Application.WordCount" />
-      <item itemvalue="Application.NewInstallUserRunner" />
-      <item itemvalue="Application.Data2File" />
+      <item itemvalue="Application.Damaged_monitor" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.Spark_Hive_Test" />
+      <item itemvalue="Application.Test2" />
+      <item itemvalue="Application.Test3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Data2File" />
-        <item itemvalue="Application.NewInstallUserRunner" />
-        <item itemvalue="Application.AnalyserLogDataRunner" />
-        <item itemvalue="Application.RandomLog" />
-        <item itemvalue="Application.WordCount" />
+        <item itemvalue="Application.Damaged_monitor" />
+        <item itemvalue="Application.Test3" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Spark_Hive_Test" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +453,7 @@
       <workItem from="1576829077164" duration="10650000" />
       <workItem from="1576900851734" duration="53737000" />
       <workItem from="1577336775303" duration="37000" />
-      <workItem from="1577336837847" duration="6039000" />
+      <workItem from="1577336837847" duration="25325000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1574314150826</created>
@@ -406,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577335006338</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="完成数据导入到hive中">
+      <created>1577423673966</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1577423673966</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +626,8 @@
     <MESSAGE value="完成new user 分析" />
     <MESSAGE value="完成active user 分析" />
     <MESSAGE value="使用hive完成 用户访问深度 分析" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用hive完成 用户访问深度 分析" />
+    <MESSAGE value="完成数据导入到hive中" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成数据导入到hive中" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="189" key="#Inspections" timestamp="1576670356555">
@@ -459,10 +642,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="304" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577336988658" />
-    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1577414890192">
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1577626632397">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1577414890192" />
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1577626632397" />
     <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1577277496245">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -479,10 +662,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="591" y="342" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577298930132" />
-    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1577337158636">
+    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1577629101169">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1577337158636" />
+    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1577629101169" />
     <state width="525" height="533" key="DebuggerActiveHint" timestamp="1577258561660">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -495,38 +678,38 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="640" y="342" key="FileChooserDialogImpl/0.23.1680.1001@0.23.1680.1001" timestamp="1576487176211" />
-    <state width="1638" height="285" key="GridCell.Tab.0.bottom" timestamp="1577418517665">
+    <state width="1638" height="375" key="GridCell.Tab.0.bottom" timestamp="1577629123435">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="285" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577418517665" />
-    <state width="1638" height="285" key="GridCell.Tab.0.center" timestamp="1577418517664">
+    <state width="1638" height="375" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577629123435" />
+    <state width="1638" height="375" key="GridCell.Tab.0.center" timestamp="1577629123435">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="285" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577418517664" />
-    <state width="1638" height="285" key="GridCell.Tab.0.left" timestamp="1577418517664">
+    <state width="1638" height="375" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577629123435" />
+    <state width="1638" height="375" key="GridCell.Tab.0.left" timestamp="1577629123434">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="285" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577418517664" />
-    <state width="1638" height="285" key="GridCell.Tab.0.right" timestamp="1577418517665">
+    <state width="1638" height="375" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577629123434" />
+    <state width="1638" height="375" key="GridCell.Tab.0.right" timestamp="1577629123435">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="285" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577418517665" />
-    <state width="1638" height="368" key="GridCell.Tab.1.bottom" timestamp="1577335094842">
+    <state width="1638" height="375" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577629123435" />
+    <state width="1638" height="368" key="GridCell.Tab.1.bottom" timestamp="1577619827101">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.1.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577335094842" />
-    <state width="1638" height="368" key="GridCell.Tab.1.center" timestamp="1577335094841">
+    <state width="1638" height="368" key="GridCell.Tab.1.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577619827101" />
+    <state width="1638" height="368" key="GridCell.Tab.1.center" timestamp="1577619827099">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.1.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577335094841" />
-    <state width="1638" height="368" key="GridCell.Tab.1.left" timestamp="1577335094841">
+    <state width="1638" height="368" key="GridCell.Tab.1.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577619827099" />
+    <state width="1638" height="368" key="GridCell.Tab.1.left" timestamp="1577619827097">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.1.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577335094841" />
-    <state width="1638" height="368" key="GridCell.Tab.1.right" timestamp="1577335094842">
+    <state width="1638" height="368" key="GridCell.Tab.1.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577619827097" />
+    <state width="1638" height="368" key="GridCell.Tab.1.right" timestamp="1577619827100">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.1.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577335094842" />
+    <state width="1638" height="368" key="GridCell.Tab.1.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577619827100" />
     <state x="378" y="185" key="Maven.ArtifactSearchDialog" timestamp="1577406855432">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -539,10 +722,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state width="547" height="496" key="SwitcherDM/0.23.1680.1001@0.23.1680.1001" timestamp="1577292041139" />
-    <state x="440" y="263" key="Vcs.Push.Dialog.v2" timestamp="1577335010783">
+    <state x="440" y="263" key="Vcs.Push.Dialog.v2" timestamp="1577423676970">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="440" y="263" key="Vcs.Push.Dialog.v2/0.23.1680.1001@0.23.1680.1001" timestamp="1577335010783" />
+    <state x="440" y="263" key="Vcs.Push.Dialog.v2/0.23.1680.1001@0.23.1680.1001" timestamp="1577423676970" />
     <state x="100" y="123" width="1480" height="801" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576940311792">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -555,10 +738,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="505" y="242" key="run.anything.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577336788364" />
-    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1577415979696">
+    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1577627724843">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577415979696" />
+    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577627724843" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -652,6 +835,26 @@
           <url>file://$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/java/package02/hadoop/transformer/mr/newuser/NewInstallUserRunner.java</url>
           <line>110</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.4/spark-sql_2.11-2.4.4-sources.jar!/org/apache/spark/sql/SparkSession.scala</url>
+          <line>865</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.4/spark-sql_2.11-2.4.4-sources.jar!/org/apache/spark/sql/SparkSession.scala</url>
+          <line>866</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.4/spark-sql_2.11-2.4.4-sources.jar!/org/apache/spark/sql/SparkSession.scala</url>
+          <line>868</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.4/spark-sql_2.11-2.4.4-sources.jar!/org/apache/spark/sql/SparkSession.scala</url>
+          <line>1115</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

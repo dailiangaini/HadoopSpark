@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?><!--
-   Licensed to the Apache Software Foundation (ASF) under one or more
-   contributor license agreements.  See the NOTICE file distributed with
-   this work for additional information regarding copyright ownership.
-   The ASF licenses this file to You under the Apache License, Version 2.0
-   (the "License"); you may not use this file except in compliance with
-   the License.  You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
---><configuration>
-    <!-- WARNING!!! This file is auto generated for documentation purposes ONLY! -->
-    <!-- WARNING!!! Any changes you make to this file will be ignored by Hive.   -->
-    <!-- WARNING!!! You must make your changes in hive-site.xml instead.         -->
-    <!-- Hive Execution Parameters -->
-
-
-    <!-- 插入一下代码 -->
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>  
+      <name>hive.metastore.warehouse.dir</name>  
+      <value>/user/hive/warehouse</value>  
+    </property>
     <property>
         <name>javax.jdo.option.ConnectionUserName</name>
         <value>root</value>
@@ -30,47 +13,55 @@
         <name>javax.jdo.option.ConnectionPassword</name>
         <value>123456</value>
     </property>
-    <property>
+   <property>
         <name>javax.jdo.option.ConnectionURL</name>
-        <value>jdbc:mysql://localhost:3306/hive?useSSL=false</value>
+        <value>jdbc:mysql://localhost:3306/hive_2_3_6?createDatabaseIfNotExist=true&amp;useSSL=false</value>
     </property>
     <property>
         <name>javax.jdo.option.ConnectionDriverName</name>
         <value>com.mysql.jdbc.Driver</value>
-    </property>
-    <!-- 到此结束代码 -->
-
-    <!-- 显示表的列名 -->
-    <property>
-        <name>hive.cli.print.header</name>
-        <value>true</value>
-    </property>
-
-    <!-- 显示数据库名称 -->
-    <property>
-        <name>hive.cli.print.current.db</name>
-        <value>true</value>
     </property>
 
     <property>
         <name>hive.metastore.schema.verification</name>
         <value>false</value>
     </property>
+    
+    <!-- 显示表的列名 -->
     <property>
-        <name>hbase.zookeeper.quorum</name>
-        <value>localhost</value>
+      <name>hive.cli.print.header</name>
+      <value>true</value>
     </property>
 
+    <!-- 显示数据库名称 -->
     <property>
-        <name>hive.metastore.uris</name>
-        <value>thrift://localhost:9083</value>
+      <name>hive.cli.print.current.db</name>
+      <value>true</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.schema.verification</name>
+      <value>false</value>
     </property>
     <property>
-        <name>hive.server2.thrift.port</name>
-        <value>10000</value>
-    </property>
-    <property>
-        <name>hive.server2.thrift.bind.host</name>
-        <value>localhost</value>
-    </property>
+      <name>hbase.zookeeper.quorum</name>
+      <value>localhost</value>
+  </property>
+
+  <property>  
+      <name>hive.metastore.local</name>  
+      <value>false</value>
+  </property> 
+  <property>
+      <name>hive.metastore.uris</name>
+      <value>thrift://localhost:9083</value>
+  </property>
+  <property> 
+      <name>hive.server2.thrift.port</name> 
+      <value>10000</value> 
+  </property>
+  <property>
+      <name>hive.server2.thrift.bind.host</name>
+      <value>localhost</value>
+  </property>
 </configuration>
