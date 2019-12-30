@@ -7,13 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p2_monitor_topn_car/Monitor_topn_car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p3_monitor_topn_car_info/Monitor_topn_car_info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p4_monitor_topn_speed/Monitor_topn_speed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p5_car_collision/Car_collsion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p6_one_monitor_all_car_trace/One_onitor_all_car_trace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p7_sample_car/Sample_car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain/CarInfoPer5M.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain/CarTrack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain/MonitorState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain/RandomExtractCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain/RandomExtractMonitorDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain/Top10SpeedPerMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain/TopNMonitor2CarCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain/TopNMonitorDetailInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p1_damaged_monitor/Damaged_monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p1_damaged_monitor/Damaged_monitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +71,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/skynet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -81,18 +86,18 @@
       <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain" />
       <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/skynet" />
       <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources" />
       <recent name="$PROJECT_DIR$/Project02_01_Scala/src/main/resources" />
       <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="package02.spark.analyse.p7_sample_car" />
       <recent name="package02.spark.analyse.p6_one_monitor_all_car_trace" />
       <recent name="package02.spark.analyse.p5_car_collision" />
       <recent name="package02.spark.analyse.p4_monitor_topn_speed" />
       <recent name="package02.spark.analyse.p3_monitor_topn_car_info" />
-      <recent name="package02.spark.analyse.p2_monitor_topn_car" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="package03.secondsort" />
@@ -101,7 +106,7 @@
       <recent name="package02.tq.map" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.One_onitor_all_car_trace">
+  <component name="RunManager" selected="Application.Sample_car">
     <configuration name="ActiveUserRunner" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -119,20 +124,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="package02.spark.analyse.p5_car_collision.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Damaged_monitor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p1_damaged_monitor.Damaged_monitor" />
-      <module name="Project02_03_Traffic_Teach" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="package02.spark.analyse.p1_damaged_monitor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,6 +173,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Sample_car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p7_sample_car.Sample_car" />
+      <module name="Project02_03_Traffic_Teach" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="package02.spark.analyse.p7_sample_car.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -206,19 +211,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ActiveUserRunner" />
-      <item itemvalue="Application.Damaged_monitor" />
       <item itemvalue="Application.Monitor_topn_car_info" />
       <item itemvalue="Application.Monitor_topn_speed" />
       <item itemvalue="Application.Car_collsion" />
       <item itemvalue="Application.One_onitor_all_car_trace" />
+      <item itemvalue="Application.Sample_car" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Sample_car" />
         <item itemvalue="Application.One_onitor_all_car_trace" />
         <item itemvalue="Application.Car_collsion" />
         <item itemvalue="Application.Monitor_topn_speed" />
         <item itemvalue="Application.Monitor_topn_car_info" />
-        <item itemvalue="Application.Damaged_monitor" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +273,7 @@
       <workItem from="1576829077164" duration="10650000" />
       <workItem from="1576900851734" duration="53737000" />
       <workItem from="1577336775303" duration="37000" />
-      <workItem from="1577336837847" duration="36881000" />
+      <workItem from="1577336837847" duration="40291000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1574314150826</created>
@@ -410,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577629214436</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="完成卡口分析">
+      <created>1577681801363</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1577681801363</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +462,8 @@
     <MESSAGE value="使用hive完成 用户访问深度 分析" />
     <MESSAGE value="完成数据导入到hive中" />
     <MESSAGE value="完成卡口状态监测" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成卡口状态监测" />
+    <MESSAGE value="完成卡口分析" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成卡口分析" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="189" key="#Inspections" timestamp="1576670356555">
@@ -465,10 +478,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="304" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577336988658" />
-    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1577680593954">
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1577685670878">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1577680593954" />
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1577685670878" />
     <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1577277496245">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -485,10 +498,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="591" y="342" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577298930132" />
-    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1577629213734">
+    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1577681801031">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1577629213734" />
+    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1577681801031" />
     <state width="525" height="533" key="DebuggerActiveHint" timestamp="1577258561660">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -501,22 +514,22 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="640" y="342" key="FileChooserDialogImpl/0.23.1680.1001@0.23.1680.1001" timestamp="1576487176211" />
-    <state width="1638" height="506" key="GridCell.Tab.0.bottom" timestamp="1577681620619">
+    <state width="1638" height="394" key="GridCell.Tab.0.bottom" timestamp="1577686309872">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="506" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577681620619" />
-    <state width="1638" height="506" key="GridCell.Tab.0.center" timestamp="1577681620618">
+    <state width="1638" height="394" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577686309872" />
+    <state width="1638" height="394" key="GridCell.Tab.0.center" timestamp="1577686309872">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="506" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577681620618" />
-    <state width="1638" height="506" key="GridCell.Tab.0.left" timestamp="1577681620618">
+    <state width="1638" height="394" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577686309872" />
+    <state width="1638" height="394" key="GridCell.Tab.0.left" timestamp="1577686309871">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="506" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577681620618" />
-    <state width="1638" height="506" key="GridCell.Tab.0.right" timestamp="1577681620619">
+    <state width="1638" height="394" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577686309871" />
+    <state width="1638" height="394" key="GridCell.Tab.0.right" timestamp="1577686309872">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="506" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577681620619" />
+    <state width="1638" height="394" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577686309872" />
     <state width="1638" height="368" key="GridCell.Tab.1.bottom" timestamp="1577619827101">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -545,10 +558,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state width="547" height="496" key="SwitcherDM/0.23.1680.1001@0.23.1680.1001" timestamp="1577292041139" />
-    <state x="440" y="263" key="Vcs.Push.Dialog.v2" timestamp="1577629221197">
+    <state x="440" y="263" key="Vcs.Push.Dialog.v2" timestamp="1577681805969">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="440" y="263" key="Vcs.Push.Dialog.v2/0.23.1680.1001@0.23.1680.1001" timestamp="1577629221197" />
+    <state x="440" y="263" key="Vcs.Push.Dialog.v2/0.23.1680.1001@0.23.1680.1001" timestamp="1577681805969" />
     <state x="100" y="123" width="1480" height="801" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576940311792">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
