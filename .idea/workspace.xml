@@ -7,8 +7,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0d6db75-54c3-4dab-a0eb-848475fef9f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p8_monitor_flow_conversion_rate/Monitor_flow_conversion_rate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/2.智慧交通项目-分析.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/2.智慧交通项目.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p10_dynamically_change_broadcast_variables/Dynamic_change_broadcast_variables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p11_one_area_car_topn_road/ConcatStringStringUDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p11_one_area_car_topn_road/GroupConcatDistinctUDAF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p11_one_area_car_topn_road/One_area_car_topn_road.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p11_one_area_car_topn_road/RandomPrefixUDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p11_one_area_car_topn_road/RemoveRandomPrefixUDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p9_real_time_road_congestion/Real_time_road_congestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/智慧交通项目-分析笔记.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1577700940000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1577700940000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1577700945000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1577700945000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1577700950000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1577700950000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1577700955000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1577700955000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1577700960000.bk.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/.checkpoint-1577700960000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/4484c3cf-bf60-47ca-8f46-bc26259158e4/rdd-103/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/4484c3cf-bf60-47ca-8f46-bc26259158e4/rdd-103/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/4484c3cf-bf60-47ca-8f46-bc26259158e4/rdd-103/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/4484c3cf-bf60-47ca-8f46-bc26259158e4/rdd-103/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/4484c3cf-bf60-47ca-8f46-bc26259158e4/rdd-116/._partitioner.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/4484c3cf-bf60-47ca-8f46-bc26259158e4/rdd-116/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/4484c3cf-bf60-47ca-8f46-bc26259158e4/rdd-116/_partitioner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/4484c3cf-bf60-47ca-8f46-bc26259158e4/rdd-116/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/checkpoint-1577700940000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/checkpoint-1577700940000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/checkpoint-1577700945000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/checkpoint-1577700945000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/checkpoint-1577700950000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/checkpoint-1577700950000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/checkpoint-1577700955000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/checkpoint-1577700955000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/checkpoint-1577700960000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/checkpoint-1577700960000.bk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/receivedBlockMetadata/log-1577700875632-1577700935632" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint/receivedBlockMetadata/log-1577700940121-1577701000121" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package01/data/mockdata/MockRealTimeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package01/data/mockdata/MockRealTimeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +75,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://scala-decompiled/KafkaUtils.decompiled.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -61,7 +106,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -70,33 +115,33 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources/conf" />
-      <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain" />
-      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/skynet" />
-      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Project02_01_Scala/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Project01_03_Electricity_Log/src/main/resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="package02.spark.analyse.p8_monitor_flow_conversion_rate" />
-      <recent name="package02.spark.analyse.p7_sample_car" />
-      <recent name="package02.spark.analyse.p6_one_monitor_all_car_trace" />
-      <recent name="package02.spark.analyse.p5_car_collision" />
-      <recent name="package02.spark.analyse.p4_monitor_topn_speed" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="package03.secondsort" />
       <recent name="package02.tq.comparator" />
       <recent name="package02.tq.reduce" />
       <recent name="package02.tq.map" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main" />
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/analyse/p11_one_area_car_topn_road" />
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/domain" />
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/java/package02/spark/skynet" />
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="package02.spark.analyse.p9_real_time_road_congestion" />
+      <recent name="package02.spark.analyse.p8_monitor_flow_conversion_rate" />
+      <recent name="package02.spark.analyse.p7_sample_car" />
+      <recent name="package02.spark.analyse.p6_one_monitor_all_car_trace" />
+      <recent name="package02.spark.analyse.p5_car_collision" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources" />
+      <recent name="$PROJECT_DIR$/Project02_03_Traffic_Teach/src/main/resources/conf" />
+      <recent name="$PROJECT_DIR$/Project01_01_Hadoop/src/main/resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Monitor_flow_conversion_rate">
+  <component name="RunManager" selected="Application.One_area_car_topn_road">
     <configuration name="ActiveUserRunner" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -107,13 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Car_collsion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p5_car_collision.Car_collsion" />
+    <configuration name="MockRealTimeData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package01.data.mockdata.MockRealTimeData" />
       <module name="Project02_03_Traffic_Teach" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package02.spark.analyse.p5_car_collision.*" />
+          <option name="PATTERN" value="package01.data.mockdata.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,13 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Monitor_topn_speed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p4_monitor_topn_speed.Monitor_topn_speed" />
+    <configuration name="One_area_car_topn_road" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p11_one_area_car_topn_road.One_area_car_topn_road" />
       <module name="Project02_03_Traffic_Teach" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package02.spark.analyse.p4_monitor_topn_speed.*" />
+          <option name="PATTERN" value="package02.spark.analyse.p11_one_area_car_topn_road.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,13 +194,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="One_onitor_all_car_trace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p6_one_monitor_all_car_trace.One_onitor_all_car_trace" />
+    <configuration name="Real_time_road_congestion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="package02.spark.analyse.p9_real_time_road_congestion.Real_time_road_congestion" />
       <module name="Project02_03_Traffic_Teach" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="package02.spark.analyse.p6_one_monitor_all_car_trace.*" />
+          <option name="PATTERN" value="package02.spark.analyse.p9_real_time_road_congestion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -201,19 +246,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ActiveUserRunner" />
-      <item itemvalue="Application.Monitor_topn_speed" />
-      <item itemvalue="Application.Car_collsion" />
-      <item itemvalue="Application.One_onitor_all_car_trace" />
       <item itemvalue="Application.Sample_car" />
       <item itemvalue="Application.Monitor_flow_conversion_rate" />
+      <item itemvalue="Application.MockRealTimeData" />
+      <item itemvalue="Application.Real_time_road_congestion" />
+      <item itemvalue="Application.One_area_car_topn_road" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.One_area_car_topn_road" />
+        <item itemvalue="Application.MockRealTimeData" />
+        <item itemvalue="Application.Real_time_road_congestion" />
         <item itemvalue="Application.Monitor_flow_conversion_rate" />
         <item itemvalue="Application.Sample_car" />
-        <item itemvalue="Application.One_onitor_all_car_trace" />
-        <item itemvalue="Application.Car_collsion" />
-        <item itemvalue="Application.Monitor_topn_speed" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +308,8 @@
       <workItem from="1576829077164" duration="10650000" />
       <workItem from="1576900851734" duration="53737000" />
       <workItem from="1577336775303" duration="37000" />
-      <workItem from="1577336837847" duration="42198000" />
+      <workItem from="1577336837847" duration="43765000" />
+      <workItem from="1577694910410" duration="10834000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1574314150826</created>
@@ -419,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577687393619</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="完成流量转换率分析抽样">
+      <created>1577689423976</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1577689423976</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +514,8 @@
     <MESSAGE value="完成卡口状态监测" />
     <MESSAGE value="完成卡口分析" />
     <MESSAGE value="完成数据抽样" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成数据抽样" />
+    <MESSAGE value="完成流量转换率分析抽样" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成流量转换率分析抽样" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="189" key="#Inspections" timestamp="1576670356555">
@@ -476,18 +530,18 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="304" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577336988658" />
-    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1577685670878">
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1577699732716">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1577685670878" />
+    <state x="653" y="240" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1001@0.23.1680.1001" timestamp="1577699732716" />
     <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1577277496245">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="590" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577277496245" />
-    <state x="528" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576769986082">
+    <state x="528" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577694754026">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="528" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1576769986082" />
+    <state x="528" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577694754026" />
     <state x="255" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576940647522">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -496,10 +550,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="591" y="342" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1680.1001@0.23.1680.1001" timestamp="1577298930132" />
-    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1577687393434">
+    <state x="244" y="125" key="CommitChangelistDialog2" timestamp="1577715997402">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1577687393434" />
+    <state x="244" y="125" key="CommitChangelistDialog2/0.23.1680.1001@0.23.1680.1001" timestamp="1577715997402" />
     <state width="525" height="533" key="DebuggerActiveHint" timestamp="1577258561660">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -512,38 +566,38 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="640" y="342" key="FileChooserDialogImpl/0.23.1680.1001@0.23.1680.1001" timestamp="1576487176211" />
-    <state width="1638" height="201" key="GridCell.Tab.0.bottom" timestamp="1577689309890">
+    <state width="1638" height="395" key="GridCell.Tab.0.bottom" timestamp="1577715695042">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="201" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577689309890" />
-    <state width="1638" height="201" key="GridCell.Tab.0.center" timestamp="1577689309889">
+    <state width="1638" height="395" key="GridCell.Tab.0.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577715695042" />
+    <state width="1638" height="395" key="GridCell.Tab.0.center" timestamp="1577715695041">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="201" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577689309889" />
-    <state width="1638" height="201" key="GridCell.Tab.0.left" timestamp="1577689309888">
+    <state width="1638" height="395" key="GridCell.Tab.0.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577715695041" />
+    <state width="1638" height="395" key="GridCell.Tab.0.left" timestamp="1577715695041">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="201" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577689309888" />
-    <state width="1638" height="201" key="GridCell.Tab.0.right" timestamp="1577689309889">
+    <state width="1638" height="395" key="GridCell.Tab.0.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577715695041" />
+    <state width="1638" height="395" key="GridCell.Tab.0.right" timestamp="1577715695041">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="201" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577689309889" />
-    <state width="1638" height="368" key="GridCell.Tab.1.bottom" timestamp="1577619827101">
+    <state width="1638" height="395" key="GridCell.Tab.0.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577715695041" />
+    <state width="1638" height="368" key="GridCell.Tab.1.bottom" timestamp="1577694762151">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.1.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577619827101" />
-    <state width="1638" height="368" key="GridCell.Tab.1.center" timestamp="1577619827099">
+    <state width="1638" height="368" key="GridCell.Tab.1.bottom/0.23.1680.1001@0.23.1680.1001" timestamp="1577694762151" />
+    <state width="1638" height="368" key="GridCell.Tab.1.center" timestamp="1577694762150">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.1.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577619827099" />
-    <state width="1638" height="368" key="GridCell.Tab.1.left" timestamp="1577619827097">
+    <state width="1638" height="368" key="GridCell.Tab.1.center/0.23.1680.1001@0.23.1680.1001" timestamp="1577694762150" />
+    <state width="1638" height="368" key="GridCell.Tab.1.left" timestamp="1577694762150">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.1.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577619827097" />
-    <state width="1638" height="368" key="GridCell.Tab.1.right" timestamp="1577619827100">
+    <state width="1638" height="368" key="GridCell.Tab.1.left/0.23.1680.1001@0.23.1680.1001" timestamp="1577694762150" />
+    <state width="1638" height="368" key="GridCell.Tab.1.right" timestamp="1577694762151">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state width="1638" height="368" key="GridCell.Tab.1.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577619827100" />
+    <state width="1638" height="368" key="GridCell.Tab.1.right/0.23.1680.1001@0.23.1680.1001" timestamp="1577694762151" />
     <state x="378" y="185" key="Maven.ArtifactSearchDialog" timestamp="1577406855432">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -556,10 +610,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state width="547" height="496" key="SwitcherDM/0.23.1680.1001@0.23.1680.1001" timestamp="1577292041139" />
-    <state x="440" y="263" key="Vcs.Push.Dialog.v2" timestamp="1577687396655">
+    <state x="440" y="263" key="Vcs.Push.Dialog.v2" timestamp="1577689426292">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="440" y="263" key="Vcs.Push.Dialog.v2/0.23.1680.1001@0.23.1680.1001" timestamp="1577687396655" />
+    <state x="440" y="263" key="Vcs.Push.Dialog.v2/0.23.1680.1001@0.23.1680.1001" timestamp="1577689426292" />
     <state x="100" y="123" width="1480" height="801" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576940311792">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
@@ -572,10 +626,10 @@
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
     <state x="505" y="242" key="run.anything.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577336788364" />
-    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1577627724843">
+    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup" timestamp="1577708013918">
       <screen x="0" y="23" width="1680" height="1001" />
     </state>
-    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577627724843" />
+    <state x="505" y="244" width="670" height="676" key="search.everywhere.popup/0.23.1680.1001@0.23.1680.1001" timestamp="1577708013918" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

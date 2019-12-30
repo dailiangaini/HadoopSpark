@@ -22,10 +22,13 @@ public class MockRealTimeData extends Thread {
 	}
 	
 	private Properties createProducerConfig() {
-		Properties props = new Properties();
-		props.put("serializer.class", "kafka.serializer.StringEncoder");
-		props.put("metadata.broker.list", "node1:9092,node2:9092,node3:9092");
-		return props;
+		Properties kafkaProps = new Properties();
+		kafkaProps.put("bootstrap.servers","localhost:9092");
+		kafkaProps.put("key.serializer",
+				"org.apache.kafka.common.serialization.StringSerializer");
+		kafkaProps.put("value.serializer",
+				"org.apache.kafka.common.serialization.StringSerializer") ;
+		return kafkaProps;
 	}
 	
 	@Override
@@ -44,7 +47,7 @@ public class MockRealTimeData extends Thread {
 			producer.send(new ProducerRecord<String, String>("RoadRealTimeLog", date+"\t"+monitorId+"\t"+cameraId+"\t"+car + "\t" + actionTime + "\t" + speed + "\t" + roadId + "\t" + areaId));
 			
 			try {
-				Thread.sleep(50);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}  
