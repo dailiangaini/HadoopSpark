@@ -1,4 +1,4 @@
-package package02.spark.analyse.p1_damaged_monitor;
+package package02.spark.analyse.p3_monitor_topn_car_info;
 
 /**
  * @Author: D&L
@@ -13,14 +13,18 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.Optional;
+import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.PairFlatMapFunction;
 import org.apache.spark.api.java.function.PairFunction;
+import org.apache.spark.api.java.function.VoidFunction;
+import org.apache.spark.broadcast.Broadcast;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 import package02.spark.constant.Constants;
 import package02.spark.skynet.MonitorAndCameraStateAccumulator;
 import package02.spark.util.StringUtils;
 import scala.Tuple2;
+import shapeless.ops.tuple;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,7 +34,8 @@ import java.util.List;
 /**
  *
  */
-public class Damaged_monitor {
+public class Monitor_topn_car_info {
+    
     public static void main(String[] args) {
         String startDate = "2019-12-01";
         String endDate = "2019-12-31";
@@ -48,6 +53,7 @@ public class Damaged_monitor {
 
         SparkContext sparkContext = spark.sparkContext();
         JavaSparkContext sc = new JavaSparkContext(spark.sparkContext());
+
         /**
          * 设置jar路径
          * sc.addJar("");
@@ -318,12 +324,102 @@ public class Damaged_monitor {
          * action 类算子触发以上操作
          *
          */
-        carCount2MonitorRDD.count();
+        List<Tuple2<Integer, String>> list = carCount2MonitorRDD.sortByKey(false).take(3);
+        for (Tuple2<Integer, String> tuple2 : list) {
+            System.out.println(tuple2._2+":"+ tuple2._1);
+        }
+        /**
+         * monitorId2MonitorIdRDD ---- K:monitor_id V:monitor_id
+         * 获取topN卡口的详细信息
+         * monitorId2MonitorIdRDD.join(monitorId2RowRDD)
+         */
+        List<Tuple2<String, String>> monitorId2CarCounts = new ArrayList<>();
+        for(Tuple2<Integer,String> t : list){
+            monitorId2CarCounts.add(new Tuple2<String, String>(t._2, t._2));
+        }
+        JavaPairRDD<String, String> topNMonitor2CarFlow = sc.parallelizePairs(monitorId2CarCounts);
 
+        getTopNDetailsByJoin(topNMonitor2CarFlow,monitor2DetailRDD);
+
+        getTopNDetailsByBroadcast(sc, topNMonitor2CarFlow,monitor2DetailRDD);
         /**
          * 输出显示运算结果
          */
         showResult(monitorAndCameraStateAccumulator);
+    }
+
+    /**
+     * 获取topN 卡口的车流量具体信息，存入数据库表 topn_monitor_detail_info 中
+     * @param topNMonitor2CarFlow ---- (monitorId,monitorId)
+     * @param monitor2DetailRDD ---- (monitorId,Row)
+     */
+    private static void getTopNDetailsByBroadcast( JavaSparkContext javaSparkContext,JavaPairRDD<String, String> topNMonitor2CarFlow, JavaPairRDD<String, Row> monitor2DetailRDD) {
+        //将topNMonitor2CarFlow（只有5条数据）转成非K,V格式的数据，便于广播出去
+        JavaRDD<String> topNMonitorCarFlow = topNMonitor2CarFlow.map(new Function<Tuple2<String, String>, String>() {
+
+            @Override
+            public String call(Tuple2<String, String> v1) throws Exception {
+                return v1._1;
+            }
+        });
+
+        List<String> topNMonitorIds = topNMonitorCarFlow.collect();
+        final Broadcast<List<String>> broadcast_topNMonitorIds = javaSparkContext.broadcast(topNMonitorIds);
+
+        JavaPairRDD<String, Row> filterTopNMonitor2CarFlow = monitor2DetailRDD.filter(new Function<Tuple2<String, Row>, Boolean>() {
+
+            @Override
+            public Boolean call(Tuple2<String, Row> monitorTuple) throws Exception {
+                return broadcast_topNMonitorIds.value().contains(monitorTuple._1);
+            }
+        });
+
+        /*filterTopNMonitor2CarFlow.foreachPartition(new VoidFunction<Iterator<Tuple2<String, Row>>>() {
+
+            @Override
+            public void call(Iterator<Tuple2<String, Row>> tuple2Iterator) throws Exception {
+                while (tuple2Iterator.hasNext()) {
+                    Tuple2<String, Row> tuple = tuple2Iterator.next();
+                    Row row = tuple._2;
+                    System.out.println(row.toString());
+                }
+            }
+        });*/
+        System.out.println("getTopNDetailsByBroadcast");
+        System.out.println(filterTopNMonitor2CarFlow.count());
+    }
+
+
+    /**
+     * 获取topN 卡口的车流量具体信息，存入数据库表 topn_monitor_detail_info 中
+     * @param topNMonitor2CarFlow ---- (monitorId,monitorId)
+     * @param monitor2DetailRDD ---- (monitorId,Row)
+     */
+    private static void getTopNDetailsByJoin( JavaPairRDD<String, String> topNMonitor2CarFlow,
+            JavaPairRDD<String, Row> monitor2DetailRDD) {
+        /**
+         * 获取车流量排名前N的卡口的详细信息   可以看一下是在什么时间段内卡口流量暴增的。
+         */
+        JavaPairRDD<String, Tuple2<String, Row>> javaPairRDD = topNMonitor2CarFlow.join(monitor2DetailRDD);
+
+
+        JavaPairRDD<String, Row> topNDetail = javaPairRDD.mapToPair(new PairFunction<Tuple2<String, Tuple2<String, Row>>, String, Row>() {
+            private static final long serialVersionUID = 1L;
+
+            @Override
+            public Tuple2<String, Row> call(Tuple2<String, Tuple2<String, Row>> t) throws Exception {
+                return new Tuple2<String, Row>(t._1, t._2._2);
+            }
+        });
+
+        /*topNDetail.foreachPartition((VoidFunction<Iterator<Tuple2<String, Row>>>) tuple2Iterator -> {
+            while (tuple2Iterator.hasNext()) {
+                Tuple2<String, Row> tuple = tuple2Iterator.next();
+                Row row = tuple._2;
+                System.out.println(row.toString());
+            }
+        });*/
+        System.out.println(topNDetail.count());
     }
 
     /**
@@ -352,4 +448,5 @@ public class Damaged_monitor {
         System.out.println("abnormalMonitorCameraInfos:"+abnormalMonitorCameraInfos);
         System.out.println("-----------result---------------------");
     }
+
 }

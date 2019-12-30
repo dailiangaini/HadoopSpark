@@ -1,4 +1,4 @@
-package package02.spark.analyse.p1_damaged_monitor;
+package package02.spark.analyse.p2_monitor_topn_car;
 
 /**
  * @Author: D&L
@@ -30,7 +30,8 @@ import java.util.List;
 /**
  *
  */
-public class Damaged_monitor {
+public class Monitor_topn_car {
+
     public static void main(String[] args) {
         String startDate = "2019-12-01";
         String endDate = "2019-12-31";
@@ -48,6 +49,7 @@ public class Damaged_monitor {
 
         SparkContext sparkContext = spark.sparkContext();
         JavaSparkContext sc = new JavaSparkContext(spark.sparkContext());
+
         /**
          * 设置jar路径
          * sc.addJar("");
@@ -318,7 +320,10 @@ public class Damaged_monitor {
          * action 类算子触发以上操作
          *
          */
-        carCount2MonitorRDD.count();
+        List<Tuple2<Integer, String>> list = carCount2MonitorRDD.sortByKey(false).take(3);
+        for (Tuple2<Integer, String> tuple2 : list) {
+            System.out.println(tuple2._2+":"+ tuple2._1);
+        }
 
         /**
          * 输出显示运算结果
